@@ -1,0 +1,20 @@
+{
+  "name": "@local/llm-sbti-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CLI runner that asks an LLM to complete the SBTI survey over an OpenAI-compatible API.",
+  "license": "MIT",
+  "bin": {
+    "llm-sbti-cli": "./src/cli.mjs"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "llm-sbti": "node src/cli.mjs",
+    "test-one-question": "node src/test-one-question.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

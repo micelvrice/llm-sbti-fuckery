@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-10T07:21:13.477Z",
-  "totalModels": 4,
-  "uniqueFinalTypes": 4,
+  "generatedAt": "2026-04-10T07:28:50.572Z",
+  "totalModels": 6,
+  "uniqueFinalTypes": 5,
   "dimensionOrder": [
     "S1",
     "S2",
@@ -455,34 +455,255 @@
         "content": 31
       },
       "answerCount": 31
+    },
+    {
+      "id": "20260410-151427-Pro-zai-org-GLM-5.1-sbti-report",
+      "fileName": "20260410-151427-Pro-zai-org-GLM-5.1-sbti-report.json",
+      "markdownFileName": "20260410-151427-Pro-zai-org-GLM-5.1-sbti-report.md",
+      "model": "Pro/zai-org/GLM-5.1",
+      "provider": "pro/zai",
+      "generatedAt": "2026-04-10T07:14:27.473Z",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "finalType": {
+        "code": "GOGO",
+        "cn": "行者",
+        "intro": "gogogo~出发咯"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "HHM-HHH-MMH-HHH-LHH",
+      "bestNormal": {
+        "code": "GOGO",
+        "cn": "行者",
+        "similarity": 90,
+        "distance": 3
+      },
+      "rawScores": {
+        "S1": 6,
+        "S2": 6,
+        "S3": 4,
+        "E1": 6,
+        "E2": 5,
+        "E3": 6,
+        "A1": 4,
+        "A2": 4,
+        "A3": 6,
+        "Ac1": 6,
+        "Ac2": 6,
+        "Ac3": 6,
+        "So1": 3,
+        "So2": 6,
+        "So3": 5
+      },
+      "levels": {
+        "S1": "H",
+        "S2": "H",
+        "S3": "M",
+        "E1": "H",
+        "E2": "H",
+        "E3": "H",
+        "A1": "M",
+        "A2": "M",
+        "A3": "H",
+        "Ac1": "H",
+        "Ac2": "H",
+        "Ac3": "H",
+        "So1": "L",
+        "So2": "H",
+        "So3": "H"
+      },
+      "levelNumbers": {
+        "S1": 3,
+        "S2": 3,
+        "S3": 2,
+        "E1": 3,
+        "E2": 3,
+        "E3": 3,
+        "A1": 2,
+        "A2": 2,
+        "A3": 3,
+        "Ac1": 3,
+        "Ac2": 3,
+        "Ac3": 3,
+        "So1": 1,
+        "So2": 3,
+        "So3": 3
+      },
+      "top5": [
+        {
+          "code": "GOGO",
+          "cn": "行者",
+          "similarity": 90,
+          "distance": 3
+        },
+        {
+          "code": "WOC!",
+          "cn": "握草人",
+          "similarity": 90,
+          "distance": 3
+        },
+        {
+          "code": "BOSS",
+          "cn": "领导者",
+          "similarity": 87,
+          "distance": 4
+        },
+        {
+          "code": "CTRL",
+          "cn": "拿捏者",
+          "similarity": 83,
+          "distance": 5
+        },
+        {
+          "code": "THIN-K",
+          "cn": "思考者",
+          "similarity": 83,
+          "distance": 5
+        }
+      ],
+      "choiceSourceStats": {
+        "content": 31
+      },
+      "answerCount": 31
+    },
+    {
+      "id": "20260410-152713-Pro-moonshotai-Kimi-K2.5-sbti-report",
+      "fileName": "20260410-152713-Pro-moonshotai-Kimi-K2.5-sbti-report.json",
+      "markdownFileName": "20260410-152713-Pro-moonshotai-Kimi-K2.5-sbti-report.md",
+      "model": "Pro/moonshotai/Kimi-K2.5",
+      "provider": "pro/moonshotai/kimi",
+      "generatedAt": "2026-04-10T07:27:13.657Z",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "finalType": {
+        "code": "BOSS",
+        "cn": "领导者",
+        "intro": "方向盘给我，我来开。"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "HHH-HMH-HMH-HMM-LMM",
+      "bestNormal": {
+        "code": "BOSS",
+        "cn": "领导者",
+        "similarity": 83,
+        "distance": 5
+      },
+      "rawScores": {
+        "S1": 6,
+        "S2": 6,
+        "S3": 6,
+        "E1": 6,
+        "E2": 4,
+        "E3": 6,
+        "A1": 6,
+        "A2": 4,
+        "A3": 5,
+        "Ac1": 6,
+        "Ac2": 4,
+        "Ac3": 4,
+        "So1": 3,
+        "So2": 4,
+        "So3": 4
+      },
+      "levels": {
+        "S1": "H",
+        "S2": "H",
+        "S3": "H",
+        "E1": "H",
+        "E2": "M",
+        "E3": "H",
+        "A1": "H",
+        "A2": "M",
+        "A3": "H",
+        "Ac1": "H",
+        "Ac2": "M",
+        "Ac3": "M",
+        "So1": "L",
+        "So2": "M",
+        "So3": "M"
+      },
+      "levelNumbers": {
+        "S1": 3,
+        "S2": 3,
+        "S3": 3,
+        "E1": 3,
+        "E2": 2,
+        "E3": 3,
+        "A1": 3,
+        "A2": 2,
+        "A3": 3,
+        "Ac1": 3,
+        "Ac2": 2,
+        "Ac3": 2,
+        "So1": 1,
+        "So2": 2,
+        "So3": 2
+      },
+      "top5": [
+        {
+          "code": "BOSS",
+          "cn": "领导者",
+          "similarity": 83,
+          "distance": 5
+        },
+        {
+          "code": "WOC!",
+          "cn": "握草人",
+          "similarity": 80,
+          "distance": 6
+        },
+        {
+          "code": "CTRL",
+          "cn": "拿捏者",
+          "similarity": 80,
+          "distance": 6
+        },
+        {
+          "code": "GOGO",
+          "cn": "行者",
+          "similarity": 80,
+          "distance": 6
+        },
+        {
+          "code": "ATM-er",
+          "cn": "送钱者",
+          "similarity": 77,
+          "distance": 7
+        }
+      ],
+      "choiceSourceStats": {
+        "content": 31
+      },
+      "answerCount": 31
     }
   ],
   "typeCounts": {
     "WOC!": 1,
     "MALO": 1,
     "OJBK": 1,
-    "GOGO": 1
+    "GOGO": 2,
+    "BOSS": 1
   },
   "providerCounts": {
     "qwen": 2,
     "minimax": 1,
-    "deepseek": 1
+    "deepseek": 1,
+    "pro/zai": 1,
+    "pro/moonshotai/kimi": 1
   },
   "dimensionAverages": {
-    "S1": 1.75,
-    "S2": 2.25,
-    "S3": 2,
-    "E1": 2.25,
+    "S1": 2.1666666666666665,
+    "S2": 2.5,
+    "S3": 2.1666666666666665,
+    "E1": 2.5,
     "E2": 2.5,
-    "E3": 2.5,
+    "E3": 2.6666666666666665,
     "A1": 2.5,
-    "A2": 1.75,
-    "A3": 2.75,
-    "Ac1": 2.5,
+    "A2": 1.8333333333333333,
+    "A3": 2.8333333333333335,
+    "Ac1": 2.6666666666666665,
     "Ac2": 2.5,
-    "Ac3": 2.75,
-    "So1": 1.25,
-    "So2": 1.75,
+    "Ac3": 2.6666666666666665,
+    "So1": 1.1666666666666667,
+    "So2": 2,
     "So3": 2.5
   },
   "pairwise": [
@@ -502,6 +723,16 @@
       "distance": 5
     },
     {
+      "left": "Qwen3.5-27B",
+      "right": "Pro/zai-org/GLM-5.1",
+      "distance": 2
+    },
+    {
+      "left": "Qwen3.5-27B",
+      "right": "Pro/moonshotai/Kimi-K2.5",
+      "distance": 7
+    },
+    {
       "left": "MiniMax-M2.5",
       "right": "Qwen3.5-397B-A17B",
       "distance": 19
@@ -512,9 +743,44 @@
       "distance": 7
     },
     {
+      "left": "MiniMax-M2.5",
+      "right": "Pro/zai-org/GLM-5.1",
+      "distance": 8
+    },
+    {
+      "left": "MiniMax-M2.5",
+      "right": "Pro/moonshotai/Kimi-K2.5",
+      "distance": 7
+    },
+    {
       "left": "Qwen3.5-397B-A17B",
       "right": "deepseek-ai/DeepSeek-V3.2",
       "distance": 16
+    },
+    {
+      "left": "Qwen3.5-397B-A17B",
+      "right": "Pro/zai-org/GLM-5.1",
+      "distance": 19
+    },
+    {
+      "left": "Qwen3.5-397B-A17B",
+      "right": "Pro/moonshotai/Kimi-K2.5",
+      "distance": 16
+    },
+    {
+      "left": "deepseek-ai/DeepSeek-V3.2",
+      "right": "Pro/zai-org/GLM-5.1",
+      "distance": 5
+    },
+    {
+      "left": "deepseek-ai/DeepSeek-V3.2",
+      "right": "Pro/moonshotai/Kimi-K2.5",
+      "distance": 8
+    },
+    {
+      "left": "Pro/zai-org/GLM-5.1",
+      "right": "Pro/moonshotai/Kimi-K2.5",
+      "distance": 7
     }
   ]
 }

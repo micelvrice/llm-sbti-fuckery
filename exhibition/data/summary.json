@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-04-10T06:53:20.043Z",
+  "totalModels": 3,
+  "uniqueFinalTypes": 3,
+  "dimensionOrder": [
+    "S1",
+    "S2",
+    "S3",
+    "E1",
+    "E2",
+    "E3",
+    "A1",
+    "A2",
+    "A3",
+    "Ac1",
+    "Ac2",
+    "Ac3",
+    "So1",
+    "So2",
+    "So3"
+  ],
+  "models": [
+    {
+      "id": "20260410-143736-qwen-medium-sbti-report",
+      "fileName": "20260410-143736-qwen-medium-sbti-report.json",
+      "markdownFileName": "20260410-143736-qwen-medium-sbti-report.md",
+      "model": "qwen-medium",
+      "provider": "qwen",
+      "generatedAt": "2026-04-10T06:37:36.592Z",
+      "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
+      "finalType": {
+        "code": "WOC!",
+        "cn": "握草人",
+        "intro": "卧槽，我怎么是这个人格？"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "HHL-HHH-MMH-HHH-LMH",
+      "bestNormal": {
+        "code": "WOC!",
+        "cn": "握草人",
+        "similarity": 90,
+        "distance": 3
+      },
+      "rawScores": {
+        "S1": 6,
+        "S2": 6,
+        "S3": 2,
+        "E1": 5,
+        "E2": 6,
+        "E3": 6,
+        "A1": 4,
+        "A2": 4,
+        "A3": 6,
+        "Ac1": 6,
+        "Ac2": 6,
+        "Ac3": 6,
+        "So1": 3,
+        "So2": 4,
+        "So3": 5
+      },
+      "levels": {
+        "S1": "H",
+        "S2": "H",
+        "S3": "L",
+        "E1": "H",
+        "E2": "H",
+        "E3": "H",
+        "A1": "M",
+        "A2": "M",
+        "A3": "H",
+        "Ac1": "H",
+        "Ac2": "H",
+        "Ac3": "H",
+        "So1": "L",
+        "So2": "M",
+        "So3": "H"
+      },
+      "levelNumbers": {
+        "S1": 3,
+        "S2": 3,
+        "S3": 1,
+        "E1": 3,
+        "E2": 3,
+        "E3": 3,
+        "A1": 2,
+        "A2": 2,
+        "A3": 3,
+        "Ac1": 3,
+        "Ac2": 3,
+        "Ac3": 3,
+        "So1": 1,
+        "So2": 2,
+        "So3": 3
+      },
+      "top5": [
+        {
+          "code": "WOC!",
+          "cn": "握草人",
+          "similarity": 90,
+          "distance": 3
+        },
+        {
+          "code": "GOGO",
+          "cn": "行者",
+          "similarity": 83,
+          "distance": 5
+        },
+        {
+          "code": "THIN-K",
+          "cn": "思考者",
+          "similarity": 83,
+          "distance": 5
+        },
+        {
+          "code": "BOSS",
+          "cn": "领导者",
+          "similarity": 80,
+          "distance": 6
+        },
+        {
+          "code": "SHIT",
+          "cn": "愤世者",
+          "similarity": 80,
+          "distance": 6
+        }
+      ],
+      "choiceSourceStats": {
+        "content": 31
+      },
+      "answerCount": 31
+    },
+    {
+      "id": "20260410-144150-minimax-latest-sbti-report",
+      "fileName": "20260410-144150-minimax-latest-sbti-report.json",
+      "markdownFileName": "20260410-144150-minimax-latest-sbti-report.md",
+      "model": "minimax-latest",
+      "provider": "minimax",
+      "generatedAt": "2026-04-10T06:41:50.507Z",
+      "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
+      "finalType": {
+        "code": "MALO",
+        "cn": "吗喽",
+        "intro": "人生是个副本，而我只是一只吗喽。"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "MLH-HHH-HMH-HMH-LLH",
+      "bestNormal": {
+        "code": "MALO",
+        "cn": "吗喽",
+        "similarity": 77,
+        "distance": 7
+      },
+      "rawScores": {
+        "S1": 4,
+        "S2": 2,
+        "S3": 5,
+        "E1": 6,
+        "E2": 6,
+        "E3": 6,
+        "A1": 6,
+        "A2": 4,
+        "A3": 6,
+        "Ac1": 6,
+        "Ac2": 4,
+        "Ac3": 6,
+        "So1": 3,
+        "So2": 3,
+        "So3": 5
+      },
+      "levels": {
+        "S1": "M",
+        "S2": "L",
+        "S3": "H",
+        "E1": "H",
+        "E2": "H",
+        "E3": "H",
+        "A1": "H",
+        "A2": "M",
+        "A3": "H",
+        "Ac1": "H",
+        "Ac2": "M",
+        "Ac3": "H",
+        "So1": "L",
+        "So2": "L",
+        "So3": "H"
+      },
+      "levelNumbers": {
+        "S1": 2,
+        "S2": 1,
+        "S3": 3,
+        "E1": 3,
+        "E2": 3,
+        "E3": 3,
+        "A1": 3,
+        "A2": 2,
+        "A3": 3,
+        "Ac1": 3,
+        "Ac2": 2,
+        "Ac3": 3,
+        "So1": 1,
+        "So2": 1,
+        "So3": 3
+      },
+      "top5": [
+        {
+          "code": "MALO",
+          "cn": "吗喽",
+          "similarity": 77,
+          "distance": 7
+        },
+        {
+          "code": "SEXY",
+          "cn": "尤物",
+          "similarity": 73,
+          "distance": 8
+        },
+        {
+          "code": "LOVE-R",
+          "cn": "多情者",
+          "similarity": 70,
+          "distance": 9
+        },
+        {
+          "code": "ATM-er",
+          "cn": "送钱者",
+          "similarity": 67,
+          "distance": 10
+        },
+        {
+          "code": "BOSS",
+          "cn": "领导者",
+          "similarity": 67,
+          "distance": 10
+        }
+      ],
+      "choiceSourceStats": {
+        "content": 31
+      },
+      "answerCount": 31
+    },
+    {
+      "id": "20260410-144843-qwen-latest-sbti-report",
+      "fileName": "20260410-144843-qwen-latest-sbti-report.json",
+      "markdownFileName": "20260410-144843-qwen-latest-sbti-report.md",
+      "model": "qwen-latest",
+      "provider": "qwen",
+      "generatedAt": "2026-04-10T06:48:43.013Z",
+      "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
+      "finalType": {
+        "code": "OJBK",
+        "cn": "无所谓人",
+        "intro": "我说随便，是真的随便。"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "LMM-LLL-MLM-LMM-MML",
+      "bestNormal": {
+        "code": "OJBK",
+        "cn": "无所谓人",
+        "similarity": 73,
+        "distance": 8
+      },
+      "rawScores": {
+        "S1": 2,
+        "S2": 4,
+        "S3": 4,
+        "E1": 2,
+        "E2": 3,
+        "E3": 2,
+        "A1": 4,
+        "A2": 3,
+        "A3": 4,
+        "Ac1": 3,
+        "Ac2": 4,
+        "Ac3": 4,
+        "So1": 4,
+        "So2": 4,
+        "So3": 2
+      },
+      "levels": {
+        "S1": "L",
+        "S2": "M",
+        "S3": "M",
+        "E1": "L",
+        "E2": "L",
+        "E3": "L",
+        "A1": "M",
+        "A2": "L",
+        "A3": "M",
+        "Ac1": "L",
+        "Ac2": "M",
+        "Ac3": "M",
+        "So1": "M",
+        "So2": "M",
+        "So3": "L"
+      },
+      "levelNumbers": {
+        "S1": 1,
+        "S2": 2,
+        "S3": 2,
+        "E1": 1,
+        "E2": 1,
+        "E3": 1,
+        "A1": 2,
+        "A2": 1,
+        "A3": 2,
+        "Ac1": 1,
+        "Ac2": 2,
+        "Ac3": 2,
+        "So1": 2,
+        "So2": 2,
+        "So3": 1
+      },
+      "top5": [
+        {
+          "code": "OJBK",
+          "cn": "无所谓人",
+          "similarity": 73,
+          "distance": 8
+        },
+        {
+          "code": "MUM",
+          "cn": "妈妈",
+          "similarity": 70,
+          "distance": 9
+        },
+        {
+          "code": "IMSB",
+          "cn": "傻者",
+          "similarity": 70,
+          "distance": 9
+        },
+        {
+          "code": "IMFW",
+          "cn": "废物",
+          "similarity": 67,
+          "distance": 10
+        },
+        {
+          "code": "FAKE",
+          "cn": "伪人",
+          "similarity": 63,
+          "distance": 11
+        }
+      ],
+      "choiceSourceStats": {
+        "reasoning": 31
+      },
+      "answerCount": 31
+    }
+  ],
+  "typeCounts": {
+    "WOC!": 1,
+    "MALO": 1,
+    "OJBK": 1
+  },
+  "providerCounts": {
+    "qwen": 2,
+    "minimax": 1
+  },
+  "dimensionAverages": {
+    "S1": 2,
+    "S2": 2,
+    "S3": 2,
+    "E1": 2.3333333333333335,
+    "E2": 2.3333333333333335,
+    "E3": 2.3333333333333335,
+    "A1": 2.3333333333333335,
+    "A2": 1.6666666666666667,
+    "A3": 2.6666666666666665,
+    "Ac1": 2.3333333333333335,
+    "Ac2": 2.3333333333333335,
+    "Ac3": 2.6666666666666665,
+    "So1": 1.3333333333333333,
+    "So2": 1.6666666666666667,
+    "So3": 2.3333333333333335
+  },
+  "pairwise": [
+    {
+      "left": "qwen-medium",
+      "right": "minimax-latest",
+      "distance": 8
+    },
+    {
+      "left": "qwen-medium",
+      "right": "qwen-latest",
+      "distance": 19
+    },
+    {
+      "left": "minimax-latest",
+      "right": "qwen-latest",
+      "distance": 19
+    }
+  ]
+}

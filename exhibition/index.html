@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM SBTI Exhibition</title>
+    <style>
+      :root {
+        --bg: #f7f7f2;
+        --ink: #15202b;
+        --muted: #4f5d6b;
+        --card: #ffffff;
+        --line: #d7dee6;
+        --accent: #c84b31;
+        --accent-2: #2f7d95;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 10% 10%, #fef3d6 0%, transparent 45%),
+          radial-gradient(circle at 90% 20%, #d9edf5 0%, transparent 45%),
+          var(--bg);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 28px 20px 72px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 48px);
+        letter-spacing: 0.02em;
+      }
+
+      .lead {
+        margin: 10px 0 24px;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px;
+        box-shadow: 0 8px 30px rgba(20, 32, 43, 0.05);
+      }
+
+      .label {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+      }
+
+      .metric {
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      .section {
+        margin-top: 26px;
+      }
+
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: 22px;
+      }
+
+      .models {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .type-code {
+        font-family: "IBM Plex Mono", Menlo, monospace;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .small {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 8px;
+        text-align: left;
+        font-size: 13px;
+      }
+
+      canvas {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .heat-cell {
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .footer {
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LLM SBTI Exhibition</h1>
+      <p class="lead">
+        A visual board for comparing personality outputs across different LLMs.
+      </p>
+
+      <div class="grid" id="metrics"></div>
+
+      <section class="section">
+        <h2>Model Personality Cards</h2>
+        <div class="models" id="models"></div>
+      </section>
+
+      <section class="section">
+        <h2>Similarity to Best Normal Type</h2>
+        <div class="card"><canvas id="similarityChart" width="1000" height="340"></canvas></div>
+      </section>
+
+      <section class="section">
+        <h2>15-Dimension Personality Radar</h2>
+        <div class="card"><canvas id="radarChart" width="1000" height="540"></canvas></div>
+      </section>
+
+      <section class="section">
+        <h2>Dimension Heatmap (L/M/H)</h2>
+        <div class="card"><div id="heatmap"></div></div>
+      </section>
+
+      <section class="section">
+        <h2>Pairwise Personality Distance</h2>
+        <div class="card"><div id="pairwise"></div></div>
+      </section>
+
+      <section class="section">
+        <h2>Choice Source Breakdown</h2>
+        <div class="card"><canvas id="sourceChart" width="1000" height="340"></canvas></div>
+      </section>
+
+      <p class="footer" id="footer"></p>
+    </div>
+
+    <script>
+      function levelColor(value) {
+        if (value <= 1) return "#2f7d95";
+        if (value <= 2) return "#c1901f";
+        return "#c84b31";
+      }
+
+      function drawBarChart(canvas, labels, values, color, valueSuffix = "") {
+        const ctx = canvas.getContext("2d");
+        const w = canvas.width;
+        const h = canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const left = 70;
+        const right = 20;
+        const top = 24;
+        const bottom = 54;
+        const chartW = w - left - right;
+        const chartH = h - top - bottom;
+        const max = Math.max(...values, 1);
+        const barW = chartW / values.length * 0.62;
+
+        ctx.strokeStyle = "#d7dee6";
+        ctx.beginPath();
+        ctx.moveTo(left, top);
+        ctx.lineTo(left, h - bottom);
+        ctx.lineTo(w - right, h - bottom);
+        ctx.stroke();
+
+        ctx.fillStyle = "#4f5d6b";
+        ctx.font = "12px IBM Plex Sans, sans-serif";
+
+        values.forEach((value, i) => {
+          const x = left + (i + 0.5) * (chartW / values.length) - barW / 2;
+          const y = h - bottom - (value / max) * chartH;
+          const barH = h - bottom - y;
+          ctx.fillStyle = color;
+          ctx.fillRect(x, y, barW, barH);
+          ctx.fillStyle = "#15202b";
+          ctx.fillText(String(value) + valueSuffix, x, y - 6);
+          ctx.save();
+          ctx.translate(x + barW / 2, h - bottom + 14);
+          ctx.rotate(-0.35);
+          ctx.fillText(labels[i], -40, 0);
+          ctx.restore();
+        });
+      }
+
+      function drawRadar(canvas, models, dimensions) {
+        const ctx = canvas.getContext("2d");
+        const w = canvas.width;
+        const h = canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const cx = w / 2;
+        const cy = h / 2;
+        const radius = Math.min(w, h) * 0.34;
+        const levels = [1, 2, 3];
+        const colors = ["#c84b31", "#2f7d95", "#7349c3", "#1d8f6a", "#d96a16"];
+
+        ctx.font = "12px IBM Plex Sans, sans-serif";
+        ctx.strokeStyle = "#d7dee6";
+
+        levels.forEach((lv) => {
+          ctx.beginPath();
+          dimensions.forEach((dim, i) => {
+            const angle = -Math.PI / 2 + (2 * Math.PI * i) / dimensions.length;
+            const x = cx + Math.cos(angle) * radius * (lv / 3);
+            const y = cy + Math.sin(angle) * radius * (lv / 3);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          });
+          ctx.closePath();
+          ctx.stroke();
+        });
+
+        dimensions.forEach((dim, i) => {
+          const angle = -Math.PI / 2 + (2 * Math.PI * i) / dimensions.length;
+          const x = cx + Math.cos(angle) * (radius + 18);
+          const y = cy + Math.sin(angle) * (radius + 18);
+          ctx.fillStyle = "#4f5d6b";
+          ctx.fillText(dim, x - 14, y);
+        });
+
+        models.forEach((model, idx) => {
+          const color = colors[idx % colors.length];
+          ctx.beginPath();
+          dimensions.forEach((dim, i) => {
+            const angle = -Math.PI / 2 + (2 * Math.PI * i) / dimensions.length;
+            const lv = model.levelNumbers[dim] || 0;
+            const x = cx + Math.cos(angle) * radius * (lv / 3);
+            const y = cy + Math.sin(angle) * radius * (lv / 3);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          });
+          ctx.closePath();
+          ctx.globalAlpha = 0.2;
+          ctx.fillStyle = color;
+          ctx.fill();
+          ctx.globalAlpha = 1;
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 2;
+          ctx.stroke();
+        });
+
+        models.forEach((model, idx) => {
+          const color = colors[idx % colors.length];
+          ctx.fillStyle = color;
+          ctx.fillRect(16, 14 + idx * 18, 12, 12);
+          ctx.fillStyle = "#15202b";
+          ctx.fillText(model.model, 34, 24 + idx * 18);
+        });
+      }
+
+      function buildHeatmap(container, summary) {
+        const table = document.createElement("table");
+        const head = document.createElement("thead");
+        const hr = document.createElement("tr");
+        hr.innerHTML = "<th>Dimension</th>" + summary.models.map((m) => `<th>${m.model}</th>`).join("");
+        head.appendChild(hr);
+        table.appendChild(head);
+        const body = document.createElement("tbody");
+
+        summary.dimensionOrder.forEach((dim) => {
+          const tr = document.createElement("tr");
+          const first = document.createElement("td");
+          first.textContent = dim;
+          tr.appendChild(first);
+          summary.models.forEach((m) => {
+            const td = document.createElement("td");
+            const value = m.levelNumbers[dim] || 0;
+            td.className = "heat-cell";
+            td.style.background = levelColor(value);
+            td.textContent = value === 1 ? "L" : value === 2 ? "M" : "H";
+            tr.appendChild(td);
+          });
+          body.appendChild(tr);
+        });
+
+        table.appendChild(body);
+        container.appendChild(table);
+      }
+
+      function buildPairwise(container, summary) {
+        const table = document.createElement("table");
+        const head = document.createElement("thead");
+        head.innerHTML = "<tr><th>Model A</th><th>Model B</th><th>Distance</th></tr>";
+        table.appendChild(head);
+        const body = document.createElement("tbody");
+        summary.pairwise
+          .slice()
+          .sort((a, b) => b.distance - a.distance)
+          .forEach((item) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `<td>${item.left}</td><td>${item.right}</td><td>${item.distance}</td>`;
+            body.appendChild(tr);
+          });
+        table.appendChild(body);
+        container.appendChild(table);
+      }
+
+      function drawSourceChart(canvas, models) {
+        const labels = models.map((m) => m.model);
+        const contentPct = models.map((m) => {
+          const total = Object.values(m.choiceSourceStats).reduce((a, b) => a + b, 0);
+          return total ? Math.round(((m.choiceSourceStats.content || 0) / total) * 100) : 0;
+        });
+        drawBarChart(canvas, labels, contentPct, "#2f7d95", "%");
+      }
+
+      async function main() {
+        const summary = await fetch("./data/summary.json").then((res) => res.json());
+        const avgSimilarity = Math.round(
+          summary.models.reduce((sum, m) => sum + (m.bestNormal ? m.bestNormal.similarity : 0), 0) /
+            summary.models.length
+        );
+
+        const metrics = document.getElementById("metrics");
+        metrics.innerHTML = `
+          <div class="card"><div class="label">Models</div><div class="metric">${summary.totalModels}</div></div>
+          <div class="card"><div class="label">Unique Final Types</div><div class="metric">${summary.uniqueFinalTypes}</div></div>
+          <div class="card"><div class="label">Avg Similarity</div><div class="metric">${avgSimilarity}%</div></div>
+          <div class="card"><div class="label">Generated At</div><div class="metric" style="font-size:18px">${summary.generatedAt.slice(0, 16).replace("T", " ")}</div></div>
+        `;
+
+        const modelsEl = document.getElementById("models");
+        modelsEl.innerHTML = summary.models
+          .map(
+            (m) => `
+            <article class="card">
+              <div class="label">${m.provider}</div>
+              <div style="font-weight:700; margin-top:6px">${m.model}</div>
+              <div class="type-code">${m.finalType.code}</div>
+              <div style="font-weight:600">${m.finalType.cn}</div>
+              <p class="small">${m.finalType.intro}</p>
+              <div class="small">Pattern: ${m.resultPattern}</div>
+              <div class="small">Best normal similarity: ${m.bestNormal ? m.bestNormal.similarity : "N/A"}%</div>
+              <div class="small">Answer source: ${Object.entries(m.choiceSourceStats)
+                .map(([k, v]) => `${k}:${v}`)
+                .join(" | ")}</div>
+              <div style="margin-top:8px" class="small">
+                <a href="./reports/${m.fileName}">json</a> ·
+                <a href="./reports/${m.markdownFileName}">md</a>
+              </div>
+            </article>
+          `
+          )
+          .join("");
+
+        drawBarChart(
+          document.getElementById("similarityChart"),
+          summary.models.map((m) => m.model),
+          summary.models.map((m) => (m.bestNormal ? m.bestNormal.similarity : 0)),
+          "#c84b31",
+          "%"
+        );
+
+        drawRadar(document.getElementById("radarChart"), summary.models, summary.dimensionOrder);
+        buildHeatmap(document.getElementById("heatmap"), summary);
+        buildPairwise(document.getElementById("pairwise"), summary);
+        drawSourceChart(document.getElementById("sourceChart"), summary.models);
+
+        document.getElementById("footer").textContent =
+          "Tip: host this folder with GitHub Pages to share the exhibition board.";
+      }
+
+      main().catch((error) => {
+        document.body.innerHTML = `<pre style="padding:20px">${String(error)}</pre>`;
+      });
+    </script>
+  </body>
+</html>

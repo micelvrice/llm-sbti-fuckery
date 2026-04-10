@@ -12,6 +12,7 @@
     "start": "node src/cli.mjs",
     "llm-sbti": "node src/cli.mjs",
     "test-one-question": "node src/test-one-question.mjs",
+    "build:exhibition": "node scripts/build-exhibition-data.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "engines": {

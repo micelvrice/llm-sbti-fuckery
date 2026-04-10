@@ -54,6 +54,27 @@ Run one-question smoke test:
 node src/test-one-question.mjs --question-id q1 --verbose
 ```
 
+## Exhibition board (multi-LLM comparison)
+
+This repo includes a static exhibition page for visual comparison:
+- personality cards per model
+- similarity bar chart
+- 15-dimension radar overlay
+- L/M/H heatmap
+- pairwise personality distance table
+- answer-source breakdown (`content` vs `reasoning`)
+
+Data flow:
+
+1. Put report files (`*.json` + `*.md`) into `exhibition/reports/`
+2. Build aggregated data:
+
+```bash
+npm run build:exhibition
+```
+
+3. Open `exhibition/index.html` (or publish `exhibition/` with GitHub Pages)
+
 ## Output
 
 Each completed full run writes:

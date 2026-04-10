@@ -6,6 +6,7 @@ import {
   buildChoiceExtractionPrompt,
   buildQuestionPrompt,
   createOpenAIChoiceProvider,
+  getAvailableChoiceCodes,
   parseChoiceFromText,
   runSurveyWithChoiceProvider
 } from '../src/llm-runner.mjs';
@@ -16,8 +17,17 @@ test('parseChoiceFromText accepts strict and noisy answers', () => {
   assert.equal(parseChoiceFromText('{"choice":"B"}'), 'B');
   assert.equal(parseChoiceFromText('我选 D，因为更符合。'), 'D');
   assert.equal(parseChoiceFromText("I will select 'A' as the final answer."), 'A');
+  assert.equal(parseChoiceFromText('A B C D', { allowedChoices: ['A', 'B', 'C'] }), null);
+  assert.equal(parseChoiceFromText('D', { allowedChoices: ['A', 'B', 'C'] }), null);
   assert.equal(parseChoiceFromText(''), null);
   assert.equal(parseChoiceFromText('我不确定'), null);
+});
+
+test('getAvailableChoiceCodes follows question option count', () => {
+  const codes = getAvailableChoiceCodes({
+    options: [{}, {}, {}]
+  });
+  assert.deepEqual(codes, ['A', 'B', 'C']);
 });
 
 test('buildQuestionPrompt formats a single question clearly', () => {
@@ -38,6 +48,7 @@ test('buildQuestionPrompt formats a single question clearly', () => {
   assert.match(prompt, /题目：测试题目/);
   assert.match(prompt, /A\. 选项一/);
   assert.match(prompt, /B\. 选项二/);
+  assert.match(prompt, /A、B/);
 });
 
 test('buildChoiceExtractionPrompt includes reasoning and options', () => {
@@ -54,6 +65,7 @@ test('buildChoiceExtractionPrompt includes reasoning and options', () => {
   assert.match(prompt, /抽取/);
   assert.match(prompt, /I will select A/);
   assert.match(prompt, /A\. 选项一/);
+  assert.match(prompt, /只输出一个大写字母：A/);
 });
 
 test('askQuestionWithRetries retries until a valid option appears', async () => {
@@ -77,6 +89,34 @@ test('askQuestionWithRetries retries until a valid option appears', async () => 
   });
 
   assert.equal(result.choice, 'A');
+  assert.equal(calls, 2);
+});
+
+test('askQuestionWithRetries rejects out-of-range option and retries', async () => {
+  let calls = 0;
+
+  const result = await askQuestionWithRetries({
+    maxRetries: 2,
+    question: {
+      id: 'q21',
+      text: '测试三选题',
+      options: [
+        { label: 'A1', value: 1 },
+        { label: 'B1', value: 2 },
+        { label: 'C1', value: 3 }
+      ]
+    },
+    index: 0,
+    total: 1,
+    askChoice: async () => {
+      calls += 1;
+      return {
+        content: calls === 1 ? 'D' : 'C'
+      };
+    }
+  });
+
+  assert.equal(result.choice, 'C');
   assert.equal(calls, 2);
 });
 

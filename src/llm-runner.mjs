@@ -31,36 +31,51 @@ const STRONG_PATTERNS = [
   /(?:最终答案|答案)\s*[:：]?\s*['"]?(A|B|C|D)['"]?/i
 ];
 
-export function parseChoiceFromText(content) {
+export function getAvailableChoiceCodes(question) {
+  return question.options.map((_, optionIndex) => formatOptionCode(optionIndex).toUpperCase());
+}
+
+function normalizeAllowedChoices(allowedChoices) {
+  if (!Array.isArray(allowedChoices) || !allowedChoices.length) {
+    return ['A', 'B', 'C', 'D'];
+  }
+  return allowedChoices.map((item) => String(item).toUpperCase());
+}
+
+export function parseChoiceFromText(content, { allowedChoices } = {}) {
   const normalized = String(content ?? '').trim().toUpperCase();
+  const allowedSet = new Set(normalizeAllowedChoices(allowedChoices));
   if (!normalized) {
     return null;
   }
 
-  if (/^[A-D]$/.test(normalized)) {
+  if (/^[A-D]$/.test(normalized) && allowedSet.has(normalized)) {
     return normalized;
   }
 
   for (const pattern of STRONG_PATTERNS) {
     const match = normalized.match(pattern);
     if (match) {
-      return match[1].toUpperCase();
+      const picked = match[1].toUpperCase();
+      if (allowedSet.has(picked)) {
+        return picked;
+      }
     }
   }
 
-  const matches = Array.from(normalized.matchAll(CHOICE_PATTERN));
-  if (matches.length === 1) {
-    return matches[0][1].toUpperCase();
-  }
+  const matches = Array.from(normalized.matchAll(CHOICE_PATTERN))
+    .map((item) => item[1].toUpperCase())
+    .filter((letter) => allowedSet.has(letter));
 
-  if (matches.length > 1) {
-    return matches[matches.length - 1][1].toUpperCase();
+  if (matches.length === 1) {
+    return matches[0];
   }
 
   return null;
 }
 
 export function buildQuestionPrompt(question, index, total) {
+  const availableChoices = getAvailableChoiceCodes(question);
   const lines = [
     `题目进度：第 ${index + 1} 题 / ${total}`,
     `题目类型：${getQuestionMetaLabel(question)}`,
@@ -72,11 +87,12 @@ export function buildQuestionPrompt(question, index, total) {
     lines.push(`${formatOptionCode(optionIndex)}. ${option.label}`);
   });
 
-  lines.push('请只返回一个字母：A、B、C 或 D。');
+  lines.push(`请只返回一个字母：${availableChoices.join('、')}。`);
   return lines.join('\n');
 }
 
 export function buildChoiceExtractionPrompt({ question, index, total, reasoning }) {
+  const availableChoices = getAvailableChoiceCodes(question);
   return [
     `题目进度：第 ${index + 1} 题 / ${total}`,
     `题目：${question.text}`,
@@ -86,7 +102,7 @@ export function buildChoiceExtractionPrompt({ question, index, total, reasoning 
     '下面是该模型的思考过程，请抽取它最终想选的选项：',
     reasoning,
     '',
-    '只输出一个大写字母：A、B、C 或 D。'
+    `只输出一个大写字母：${availableChoices.join('、')}。`
   ].join('\n');
 }
 
@@ -98,6 +114,7 @@ export async function askQuestionWithRetries({
   maxRetries = 2
 }) {
   const prompt = buildQuestionPrompt(question, index, total);
+  const availableChoices = getAvailableChoiceCodes(question);
   let lastResponse = null;
 
   for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
@@ -109,7 +126,9 @@ export async function askQuestionWithRetries({
       attempt
     });
 
-    const choice = parseChoiceFromText(response.content) ?? parseChoiceFromText(response.reasoning);
+    const choice =
+      parseChoiceFromText(response.content, { allowedChoices: availableChoices }) ??
+      parseChoiceFromText(response.reasoning, { allowedChoices: availableChoices });
     lastResponse = response;
 
     if (choice) {
@@ -190,6 +209,7 @@ export function createOpenAIChoiceProvider({
   verbose = false
 }) {
   return async function askChoice({ prompt, question, index, total, attempt }) {
+    const availableChoices = getAvailableChoiceCodes(question);
     if (verbose) {
       console.error(
         `[llm] q=${question.id} index=${index + 1}/${total} attempt=${attempt + 1} sending primary request`
@@ -207,7 +227,9 @@ export function createOpenAIChoiceProvider({
       ]
     });
 
-    const directChoice = parseChoiceFromText(response.content) ?? parseChoiceFromText(response.reasoning);
+    const directChoice =
+      parseChoiceFromText(response.content, { allowedChoices: availableChoices }) ??
+      parseChoiceFromText(response.reasoning, { allowedChoices: availableChoices });
     if (directChoice) {
       return {
         ...response,
@@ -236,7 +258,8 @@ export function createOpenAIChoiceProvider({
       });
 
       const extractedChoice =
-        parseChoiceFromText(extractionResponse.content) ?? parseChoiceFromText(extractionResponse.reasoning);
+        parseChoiceFromText(extractionResponse.content, { allowedChoices: availableChoices }) ??
+        parseChoiceFromText(extractionResponse.reasoning, { allowedChoices: availableChoices });
 
       if (verbose) {
         console.error(

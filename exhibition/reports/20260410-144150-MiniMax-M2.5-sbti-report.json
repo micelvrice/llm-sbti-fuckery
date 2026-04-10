@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "model": "minimax-latest",
+    "model": "MiniMax-M2.5",
     "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
     "generatedAt": "2026-04-10T06:41:50.507Z"
   },

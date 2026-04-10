@@ -1,49 +1,64 @@
+```markdown
 # llm-sbti-fuckery
 
-Run the same SBTI questionnaire against different LLMs and compare their personality outputs.
+**MBTI已经他妈的死了。**
 
-This project is a local benchmark-style CLI for:
-- asking one model to complete the full SBTI test,
-- generating a structured report (`.md` + `.json`),
-- repeating across models/endpoints for side-by-side analysis.
+SBTI Fuckery 正式上线——史上最抽象、最神经、最操蛋的 LLM 人格测试工具。
+
+把同一个 SBTI 问卷扔给各种大模型，看它们到底会变成**握草人**、**吗喽**、**死者**、**小丑**、**伪人**还是**纯纯的抽象批**。纯纯的 clusterfuck，保证让你笑到抽筋。
+
+---
+
+## 这是个什么玩意儿？
+
+一个本地 CLI 基准测试工具，专门干这几件暴力的事：
+- 把完整 31 题 SBTI 扔给任意一个模型
+- 自动生成结构化报告（`.md` + `.json`）
+- 跨模型/端点反复跑，做出**并排抽象人格对比**
+
+**目前已测出部分模型的奇葩人格**（实时更新中）：
 
 ## Model personality summary
 
-| Model | Final Type | Chinese Name | Best-Normal Similarity | Result Pattern | Answer Source |
-|---|---|---|---:|---|---|
-| `qwen-medium` | `WOC!` | 握草人 | 90% | `HHL-HHH-MMH-HHH-LMH` | `content:31` |
-| `minimax-latest` | `MALO` | 吗喽 | 77% | `MLH-HHH-HMH-HMH-LLH` | `content:31` |
-| `qwen-latest` | `OJBK` | 无所谓人 | 73% | `LMM-LLL-MLM-LMM-MML` | `reasoning:31` |
+| Model          | Final Type | Chinese Name | Best-Normal Similarity | Result Pattern       | Answer Source |
+|----------------|------------|--------------|------------------------|----------------------|---------------|
+| `Qwen3.5-27B`  | `WOC!`     | 握草人       | 90%                    | `HHL-HHH-MMH-HHH-LMH` | `content:31`  |
+| `MiniMax-M2.5` | `MALO`     | 吗喽         | 77%                    | `MLH-HHH-HMH-HMH-LLH` | `content:31`  |
+| `Qwen3.5-397B-A17B` | `OJBK` | 无所谓人     | 73%                    | `LMM-LLL-MLM-LMM-MML` | `reasoning:31` |
+| `deepseek-ai/DeepSeek-V3.2` | `GOGO` | 行者 | 73% | `LHM-MHH-HMH-HHH-LMH` | `content:31` |
 
-## Pairwise personality distance
+## Pairwise personality distance（越小越像，越操蛋）
 
-| Model A | Model B | Distance (15-dim) |
-|---|---|---:|
-| `qwen-medium` | `minimax-latest` | 8 |
-| `qwen-medium` | `qwen-latest` | 19 |
-| `minimax-latest` | `qwen-latest` | 19 |
+| Model A        | Model B          | Distance (15-dim) |
+|----------------|------------------|-------------------|
+| `Qwen3.5-27B`  | `MiniMax-M2.5` | 8 |
+| `Qwen3.5-27B`  | `Qwen3.5-397B-A17B` | 19 |
+| `Qwen3.5-27B`  | `deepseek-ai/DeepSeek-V3.2` | 5 |
+| `MiniMax-M2.5` | `Qwen3.5-397B-A17B` | 19 |
+| `MiniMax-M2.5` | `deepseek-ai/DeepSeek-V3.2` | 7 |
+| `Qwen3.5-397B-A17B` | `deepseek-ai/DeepSeek-V3.2` | 16 |
 
-## 15-dimension level matrix (L/M/H)
+## 15 维 L/M/H 矩阵（看谁最疯）
 
-| Dimension | qwen-medium | minimax-latest | qwen-latest |
-|---|---|---|---|
-| S1 | H | M | L |
-| S2 | H | L | M |
-| S3 | L | H | M |
-| E1 | H | H | L |
-| E2 | H | H | L |
-| E3 | H | H | L |
-| A1 | M | H | M |
-| A2 | M | M | L |
-| A3 | H | H | M |
-| Ac1 | H | H | L |
-| Ac2 | H | M | M |
-| Ac3 | H | H | M |
-| So1 | L | L | M |
-| So2 | M | L | M |
-| So3 | H | H | L |
+| Dimension | Qwen3.5-27B | MiniMax-M2.5 | Qwen3.5-397B-A17B | deepseek-ai/DeepSeek-V3.2 |
+|-----------|-------------|--------------|--------------------|----------------------------|
+| S1        | H | M | L | L |
+| S2        | H | L | M | H |
+| S3        | L | H | M | M |
+| E1        | H | H | L | M |
+| E2        | H | H | L | H |
+| E3        | H | H | L | H |
+| A1        | M | H | M | H |
+| A2        | M | M | L | M |
+| A3        | H | H | M | H |
+| Ac1       | H | H | L | H |
+| Ac2       | H | M | M | H |
+| Ac3       | H | H | M | H |
+| So1       | L | L | M | L |
+| So2       | M | L | M | M |
+| So3       | H | H | L | H |
 
-## Type distribution (Mermaid pie)
+## 当前人格分布（Mermaid 饼图）
 
 ```mermaid
 pie showData
@@ -51,165 +66,122 @@ pie showData
   "WOC!" : 1
   "MALO" : 1
   "OJBK" : 1
+  "GOGO" : 1
 ```
 
-## Answer channel distribution (Mermaid pie)
+## 回答来源分布（content 还是 reasoning？）
 
 ```mermaid
 pie showData
   title Answer Source Distribution (all answered questions)
-  "content" : 62
+  "content" : 93
   "reasoning" : 31
 ```
 
-## ECharts examples (for docs page / GitHub Pages)
+---
 
-Bar chart (similarity):
+## 为啥要搞这个仓库？
 
-```js
-const similarityOption = {
-  xAxis: { type: "category", data: ["qwen-medium", "minimax-latest", "qwen-latest"] },
-  yAxis: { type: "value", max: 100 },
-  series: [{ type: "bar", data: [90, 77, 73] }]
-};
-```
+- 同一套题 + 同一套本地打分逻辑，公平操蛋
+- 支持任何 OpenAI-compatible API（包括国产各种奇葩端点）
+- 专门适配 reasoning 重的模型（会额外抽取最终选项）
+- 所有报告本地保存，随便你后期聚合、做展板、做视频
+- 纯本地跑分，只有提问调用远程模型
 
-Radar chart (15 dimensions, L=1/M=2/H=3):
+---
 
-```js
-const indicators = [
-  "S1","S2","S3","E1","E2","E3","A1","A2","A3","Ac1","Ac2","Ac3","So1","So2","So3"
-].map((name) => ({ name, max: 3 }));
+## 项目结构（简单粗暴）
 
-const radarOption = {
-  legend: { data: ["qwen-medium", "minimax-latest", "qwen-latest"] },
-  radar: { indicator: indicators },
-  series: [{
-    type: "radar",
-    data: [
-      { name: "qwen-medium", value: [3,3,1,3,3,3,2,2,3,3,3,3,1,2,3] },
-      { name: "minimax-latest", value: [2,1,3,3,3,3,3,2,3,3,2,3,1,1,3] },
-      { name: "qwen-latest", value: [1,2,2,1,1,1,2,1,2,1,2,2,2,2,1] }
-    ]
-  }]
-};
-```
+- `src/cli.mjs` → 完整 31 题跑 + 报告生成
+- `src/test-one-question.mjs` → 单题快速验血
+- `src/llm-runner.mjs` → 提示词、解析、自动重试
+- `src/openai-client.mjs` → OpenAI 兼容客户端
+- `src/runtime.mjs` → 本地打分引擎
+- `src/bundled-data.mjs` → 内置最新 SBTI 题库快照
+- `src/report.mjs` → Markdown + JSON 报告生成器
+- `test/*.test.mjs` → 各种单元测试
 
-Heatmap (dimension vs model):
+---
 
-```js
-const models = ["qwen-medium", "minimax-latest", "qwen-latest"];
-const dims = ["S1","S2","S3","E1","E2","E3","A1","A2","A3","Ac1","Ac2","Ac3","So1","So2","So3"];
-const matrix = [
-  [0,0,3],[0,1,2],[0,2,1],[1,0,3],[1,1,1],[1,2,2],[2,0,1],[2,1,3],[2,2,2],
-  [3,0,3],[3,1,3],[3,2,1],[4,0,3],[4,1,3],[4,2,1],[5,0,3],[5,1,3],[5,2,1],
-  [6,0,2],[6,1,3],[6,2,2],[7,0,2],[7,1,2],[7,2,1],[8,0,3],[8,1,3],[8,2,2],
-  [9,0,3],[9,1,3],[9,2,1],[10,0,3],[10,1,2],[10,2,2],[11,0,3],[11,1,3],[11,2,2],
-  [12,0,1],[12,1,1],[12,2,2],[13,0,2],[13,1,1],[13,2,2],[14,0,3],[14,1,3],[14,2,1]
-];
-const heatmapOption = {
-  xAxis: { type: "category", data: models },
-  yAxis: { type: "category", data: dims },
-  visualMap: { min: 1, max: 3, orient: "horizontal", left: "center" },
-  series: [{ type: "heatmap", data: matrix.map(([y, x, v]) => [x, y, v]) }]
-};
-```
-
-## Why this repo
-
-- Same question set and scoring logic for every run
-- OpenAI-compatible API support (`/v1/chat/completions`)
-- Works with reasoning-heavy models
-- Extracts final `A/B/C/D` even when the model returns long `thinking` text
-- Produces local artifacts you can aggregate later
-
-## Project layout
-
-- `src/cli.mjs`: full 31-question run and report generation
-- `src/test-one-question.mjs`: quick single-question health check
-- `src/llm-runner.mjs`: prompting, answer parsing, retry/extraction flow
-- `src/openai-client.mjs`: OpenAI-compatible client
-- `src/runtime.mjs`: local scoring runtime
-- `src/bundled-data.mjs`: bundled SBTI snapshot
-- `src/report.mjs`: markdown/json report writer
-- `test/*.test.mjs`: parser/runtime/report tests
-
-## Quick start
+## 快速上手（三分钟上手操起来）
 
 ```bash
 git clone https://github.com/micelvrice/llm-sbti-fuckery.git
 cd llm-sbti-fuckery
+npm install   # 或 pnpm/yarn 随便
 npm test
 ```
 
-Set provider env vars:
+设置环境变量：
 
 ```bash
-export OPENAI_BASE_URL="https://your-endpoint/v1"
+export OPENAI_BASE_URL="https://你的端点/v1"
 export OPENAI_API_KEY="sk-..."
-export OPENAI_MODEL="qwen-latest"
+export OPENAI_MODEL="qwen-latest"   # 想测哪个测哪个
 ```
 
-Run a full test:
+完整跑一次：
 
 ```bash
 node src/cli.mjs --verbose --max-tokens 512 --output-dir reports
 ```
 
-Run one-question smoke test:
+单题冒烟测试：
 
 ```bash
 node src/test-one-question.mjs --question-id q1 --verbose
 ```
 
-## Exhibition board (multi-LLM comparison)
+---
 
-This repo includes a static exhibition page for visual comparison:
-- personality cards per model
-- similarity bar chart
-- 15-dimension radar overlay
-- L/M/H heatmap
-- pairwise personality distance table
-- answer-source breakdown (`content` vs `reasoning`)
+## 抽象人格展板（GitHub Pages 直接用）
 
-Data flow:
+仓库自带静态展板页面，一键生成多模型对比大屏：
+- 每模型人格卡片
+- 相似度柱状图
+- 15 维雷达图叠加
+- L/M/H 热力图
+- 两两距离表格
+- content vs reasoning 饼图
 
-1. Put report files (`*.json` + `*.md`) into `exhibition/reports/`
-2. Build aggregated data:
+使用方式：
 
 ```bash
 npm run build:exhibition
 ```
 
-3. Open `exhibition/index.html` (or publish `exhibition/` with GitHub Pages)
+把 `reports/` 里的 json 丢进 `exhibition/reports/`，打开 `exhibition/index.html` 就是现成的抽象人格博物馆。
 
-## Output
+---
 
-Each completed full run writes:
-- `reports/<timestamp>-<model>-sbti-report.md`
-- `reports/<timestamp>-<model>-sbti-report.json`
+## 每次跑完会生成什么？
 
-The JSON includes:
-- model metadata
-- answers
-- final type + ranking + dimension scores
-- transcript with `choiceSource` (`content`, `reasoning`, or `reasoning-extractor`)
+- `reports/<时间戳>-<model>-sbti-report.md`（人类可读）
+- `reports/<时间戳>-<model>-sbti-report.json`（机器可读）
 
-## CLI options (full run)
+JSON 里面包含：
+- 模型信息
+- 每题原始回答 + 来源（content / reasoning）
+- 最终类型 + 排名 + 15 维分数
+- 完整对话记录
 
-- `--base-url <url>`
-- `--api-key <key>`
-- `--model <name>`
-- `--system-prompt <text>`
-- `--seed <number>`
-- `--temperature <number>`
-- `--max-tokens <number>`
-- `--max-retries <number>`
-- `--output-dir <path>`
-- `--verbose`
-- `--json`
+---
 
-## Notes
+## CLI 参数（想怎么操就怎么操）
 
-- Scoring is local and deterministic. Only answering calls the remote model.
-- For models that expose only reasoning text, the runner performs an extra extraction call to force a final option.
+- `--base-url`、`--api-key`、`--model`
+- `--system-prompt`（想自定义系统提示就来）
+- `--temperature`、`--seed`（控制抽象程度）
+- `--max-tokens`、`--max-retries`
+- `--output-dir`、`--verbose`、`--json`
+
+---
+
+**警告**：  
+测完之后你可能会对某些模型彻底幻灭，也可能会爱上某些模型的抽象人格。  
+后果自负，概不负责。
+
+**欢迎 PR**：更多模型、更多 SBTI 变体、更多抽象展板模板，统统欢迎！
+
+**MBTI 死了，SBTI Fuckery 万岁！**  
+😂🖕

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-10T06:53:20.043Z",
-  "totalModels": 3,
-  "uniqueFinalTypes": 3,
+  "generatedAt": "2026-04-10T07:10:20.749Z",
+  "totalModels": 4,
+  "uniqueFinalTypes": 4,
   "dimensionOrder": [
     "S1",
     "S2",
@@ -21,10 +21,10 @@
   ],
   "models": [
     {
-      "id": "20260410-143736-qwen-medium-sbti-report",
-      "fileName": "20260410-143736-qwen-medium-sbti-report.json",
-      "markdownFileName": "20260410-143736-qwen-medium-sbti-report.md",
-      "model": "qwen-medium",
+      "id": "20260410-143736-Qwen3.5-27B-sbti-report",
+      "fileName": "20260410-143736-Qwen3.5-27B-sbti-report.json",
+      "markdownFileName": "20260410-143736-Qwen3.5-27B-sbti-report.md",
+      "model": "Qwen3.5-27B",
       "provider": "qwen",
       "generatedAt": "2026-04-10T06:37:36.592Z",
       "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
@@ -130,10 +130,10 @@
       "answerCount": 31
     },
     {
-      "id": "20260410-144150-minimax-latest-sbti-report",
-      "fileName": "20260410-144150-minimax-latest-sbti-report.json",
-      "markdownFileName": "20260410-144150-minimax-latest-sbti-report.md",
-      "model": "minimax-latest",
+      "id": "20260410-144150-MiniMax-M2.5-sbti-report",
+      "fileName": "20260410-144150-MiniMax-M2.5-sbti-report.json",
+      "markdownFileName": "20260410-144150-MiniMax-M2.5-sbti-report.md",
+      "model": "MiniMax-M2.5",
       "provider": "minimax",
       "generatedAt": "2026-04-10T06:41:50.507Z",
       "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
@@ -239,10 +239,10 @@
       "answerCount": 31
     },
     {
-      "id": "20260410-144843-qwen-latest-sbti-report",
-      "fileName": "20260410-144843-qwen-latest-sbti-report.json",
-      "markdownFileName": "20260410-144843-qwen-latest-sbti-report.md",
-      "model": "qwen-latest",
+      "id": "20260410-144843-Qwen3.5-397B-A17B-sbti-report",
+      "fileName": "20260410-144843-Qwen3.5-397B-A17B-sbti-report.json",
+      "markdownFileName": "20260410-144843-Qwen3.5-397B-A17B-sbti-report.md",
+      "model": "Qwen3.5-397B-A17B",
       "provider": "qwen",
       "generatedAt": "2026-04-10T06:48:43.013Z",
       "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
@@ -346,49 +346,175 @@
         "reasoning": 31
       },
       "answerCount": 31
+    },
+    {
+      "id": "20260410-145517-deepseek-ai-DeepSeek-V3.2-sbti-report",
+      "fileName": "20260410-145517-deepseek-ai-DeepSeek-V3.2-sbti-report.json",
+      "markdownFileName": "20260410-145517-deepseek-ai-DeepSeek-V3.2-sbti-report.md",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "provider": "deepseek",
+      "generatedAt": "2026-04-10T06:55:17.348Z",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "finalType": {
+        "code": "GOGO",
+        "cn": "行者",
+        "intro": "gogogo~出发咯"
+      },
+      "modeKicker": "你的主类型",
+      "resultPattern": "LHM-MHH-HMH-HHH-LMH",
+      "bestNormal": {
+        "code": "GOGO",
+        "cn": "行者",
+        "similarity": 73,
+        "distance": 8
+      },
+      "rawScores": {
+        "S1": 3,
+        "S2": 6,
+        "S3": 4,
+        "E1": 4,
+        "E2": 6,
+        "E3": 6,
+        "A1": 6,
+        "A2": 4,
+        "A3": 5,
+        "Ac1": 6,
+        "Ac2": 6,
+        "Ac3": 6,
+        "So1": 3,
+        "So2": 4,
+        "So3": 5
+      },
+      "levels": {
+        "S1": "L",
+        "S2": "H",
+        "S3": "M",
+        "E1": "M",
+        "E2": "H",
+        "E3": "H",
+        "A1": "H",
+        "A2": "M",
+        "A3": "H",
+        "Ac1": "H",
+        "Ac2": "H",
+        "Ac3": "H",
+        "So1": "L",
+        "So2": "M",
+        "So3": "H"
+      },
+      "levelNumbers": {
+        "S1": 1,
+        "S2": 3,
+        "S3": 2,
+        "E1": 2,
+        "E2": 3,
+        "E3": 3,
+        "A1": 3,
+        "A2": 2,
+        "A3": 3,
+        "Ac1": 3,
+        "Ac2": 3,
+        "Ac3": 3,
+        "So1": 1,
+        "So2": 2,
+        "So3": 3
+      },
+      "top5": [
+        {
+          "code": "GOGO",
+          "cn": "行者",
+          "similarity": 73,
+          "distance": 8
+        },
+        {
+          "code": "WOC!",
+          "cn": "握草人",
+          "similarity": 73,
+          "distance": 8
+        },
+        {
+          "code": "BOSS",
+          "cn": "领导者",
+          "similarity": 70,
+          "distance": 9
+        },
+        {
+          "code": "Dior-s",
+          "cn": "屌丝",
+          "similarity": 70,
+          "distance": 9
+        },
+        {
+          "code": "POOR",
+          "cn": "贫困者",
+          "similarity": 67,
+          "distance": 10
+        }
+      ],
+      "choiceSourceStats": {
+        "content": 31
+      },
+      "answerCount": 31
     }
   ],
   "typeCounts": {
     "WOC!": 1,
     "MALO": 1,
-    "OJBK": 1
+    "OJBK": 1,
+    "GOGO": 1
   },
   "providerCounts": {
     "qwen": 2,
-    "minimax": 1
+    "minimax": 1,
+    "deepseek": 1
   },
   "dimensionAverages": {
-    "S1": 2,
-    "S2": 2,
+    "S1": 1.75,
+    "S2": 2.25,
     "S3": 2,
-    "E1": 2.3333333333333335,
-    "E2": 2.3333333333333335,
-    "E3": 2.3333333333333335,
-    "A1": 2.3333333333333335,
-    "A2": 1.6666666666666667,
-    "A3": 2.6666666666666665,
-    "Ac1": 2.3333333333333335,
-    "Ac2": 2.3333333333333335,
-    "Ac3": 2.6666666666666665,
-    "So1": 1.3333333333333333,
-    "So2": 1.6666666666666667,
-    "So3": 2.3333333333333335
+    "E1": 2.25,
+    "E2": 2.5,
+    "E3": 2.5,
+    "A1": 2.5,
+    "A2": 1.75,
+    "A3": 2.75,
+    "Ac1": 2.5,
+    "Ac2": 2.5,
+    "Ac3": 2.75,
+    "So1": 1.25,
+    "So2": 1.75,
+    "So3": 2.5
   },
   "pairwise": [
     {
-      "left": "qwen-medium",
-      "right": "minimax-latest",
+      "left": "Qwen3.5-27B",
+      "right": "MiniMax-M2.5",
       "distance": 8
     },
     {
-      "left": "qwen-medium",
-      "right": "qwen-latest",
+      "left": "Qwen3.5-27B",
+      "right": "Qwen3.5-397B-A17B",
       "distance": 19
     },
     {
-      "left": "minimax-latest",
-      "right": "qwen-latest",
+      "left": "Qwen3.5-27B",
+      "right": "deepseek-ai/DeepSeek-V3.2",
+      "distance": 5
+    },
+    {
+      "left": "MiniMax-M2.5",
+      "right": "Qwen3.5-397B-A17B",
       "distance": 19
+    },
+    {
+      "left": "MiniMax-M2.5",
+      "right": "deepseek-ai/DeepSeek-V3.2",
+      "distance": 7
+    },
+    {
+      "left": "Qwen3.5-397B-A17B",
+      "right": "deepseek-ai/DeepSeek-V3.2",
+      "distance": 16
     }
   ]
 }

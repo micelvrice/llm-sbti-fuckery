@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "model": "qwen-medium",
+    "model": "Qwen3.5-27B",
     "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
     "generatedAt": "2026-04-10T06:37:36.592Z"
   },

@@ -1,0 +1,691 @@
+{
+  "metadata": {
+    "model": "qwen-latest",
+    "baseUrl": "https://llm-gw.bupt.edu.cn/v1",
+    "generatedAt": "2026-04-10T06:48:43.013Z"
+  },
+  "answers": {
+    "q3": 3,
+    "q28": 1,
+    "q26": 3,
+    "q4": 1,
+    "q17": 3,
+    "drink_gate_q1": 1,
+    "q18": 1,
+    "q8": 1,
+    "q1": 1,
+    "q7": 1,
+    "q21": 1,
+    "q6": 2,
+    "q25": 1,
+    "q24": 1,
+    "q19": 2,
+    "q29": 1,
+    "q16": 2,
+    "q9": 2,
+    "q13": 1,
+    "q2": 1,
+    "q22": 3,
+    "q15": 1,
+    "q30": 1,
+    "q23": 3,
+    "q12": 1,
+    "q5": 2,
+    "q20": 1,
+    "q27": 3,
+    "q14": 3,
+    "q11": 1,
+    "q10": 1
+  },
+  "result": {
+    "rawScores": {
+      "S1": 2,
+      "S2": 4,
+      "S3": 4,
+      "E1": 2,
+      "E2": 3,
+      "E3": 2,
+      "A1": 4,
+      "A2": 3,
+      "A3": 4,
+      "Ac1": 3,
+      "Ac2": 4,
+      "Ac3": 4,
+      "So1": 4,
+      "So2": 4,
+      "So3": 2
+    },
+    "levels": {
+      "S1": "L",
+      "S2": "M",
+      "S3": "M",
+      "E1": "L",
+      "E2": "L",
+      "E3": "L",
+      "A1": "M",
+      "A2": "L",
+      "A3": "M",
+      "Ac1": "L",
+      "Ac2": "M",
+      "Ac3": "M",
+      "So1": "M",
+      "So2": "M",
+      "So3": "L"
+    },
+    "ranked": [
+      {
+        "code": "OJBK",
+        "pattern": "MMH-MMM-HML-LMM-MML",
+        "cn": "无所谓人",
+        "intro": "我说随便，是真的随便。",
+        "desc": "让我们直面这个词的粗犷本质：OJBK。这已经不是一种人格，而是一种统治哲学。当凡人面临“中午吃米饭还是面条”的世纪抉择时，大脑在激烈燃烧卡路里；而OJBK人格，会用一种批阅奏章般的淡然，轻飘飘地吐出两个字：都行。这不是没主见，这是在告诉你：尔等凡俗的选择，于朕而言，皆为蝼蚁。为什么不争执？因为跟草履虫辩论宇宙的未来毫无意义。为什么不较真？因为帝王不会在意脚下的尘埃是往左飘还是往右飘。",
+        "distance": 8,
+        "exact": 7,
+        "similarity": 73
+      },
+      {
+        "code": "MUM",
+        "pattern": "MMH-MHL-HMM-LMM-HLL",
+        "cn": "妈妈",
+        "intro": "或许...我可以叫你妈妈吗....?",
+        "desc": "恭喜您，您测出了全中国最稀有的妈妈人格。是的，在混沌未开、时间尚无姓名之前，在第一颗恒星打出第一个嗝之前，就已经有了妈妈。妈妈人格的底色是温柔，擅长感知情绪，具有超强共情力，知道什么时候该停下来，什么时候该对自己说一句“算了”。妈妈像一个医生，治愈了别人的不开心。只可惜，当妈妈落泪时，TA给自己的药，剂量总是比给别人小一号。MUM对自己的温柔，常常打了折。",
+        "distance": 9,
+        "exact": 7,
+        "similarity": 70
+      },
+      {
+        "code": "IMSB",
+        "pattern": "LLM-LMM-LLL-LLL-MLM",
+        "cn": "傻者",
+        "intro": "认真的么？我真的是傻逼么？",
+        "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【IMSB】人格。IMSB人格的大脑里住着两个不死不休的究极战士：一个叫“我他妈冲了！”，另一个叫“我是个傻逼！”。当IMSB面对一个有好感的人时，前者会说：冲啊！去要微信！去约饭！爱要大声说出来！后者接着说：人家凭什么看得上你？你去了就是自取其辱！最终结果：盯着对方背影直到消失，然后掏出手机搜索“如何克服社交恐惧症”。IMSB不是真的傻，只是您的内心戏，可能比漫威宇宙所有电影加起来都长。",
+        "distance": 9,
+        "exact": 6,
+        "similarity": 70
+      },
+      {
+        "code": "IMFW",
+        "pattern": "LLH-LHL-LML-LLL-MLL",
+        "cn": "废物",
+        "intro": "我真的...是废物吗？",
+        "desc": "恭喜您，您测出的不是一个普通人格，您是一种极其珍稀的、仅占世界人口0.0001％的——【废物】。废物们的自尊通常有些脆弱，缺乏安全感，偶尔也会缺乏主见，因此这种人格能精确地感知到周围最强的那个 WiFi 信号——也就是他们心里最可靠的人。走进【废物】人格的生活，就像走进了一个顶级兰花温室：需要精确控制温度、湿度，以及每天定时进行“我爱你”的言语光合作用。给废物一颗糖，他们会还你一个完全信任你、亮晶晶的眼神。你未必是废物，你只是太没防备，太容易认真。",
+        "distance": 10,
+        "exact": 6,
+        "similarity": 67
+      },
+      {
+        "code": "FAKE",
+        "pattern": "HLM-MML-MLM-MLM-HLH",
+        "cn": "伪人",
+        "intro": "已经，没有人类了。",
+        "desc": "SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。",
+        "distance": 11,
+        "exact": 6,
+        "similarity": 63
+      },
+      {
+        "code": "SOLO",
+        "pattern": "LML-LLH-LHL-LML-LHM",
+        "cn": "孤儿",
+        "intro": "我哭了，我怎么会是孤儿？",
+        "desc": "恭喜您，您测出了全中国最稀有的【SOLO - 孤儿】人格。别急着哭，国王的加冕仪式，通常都是一个人。孤儿的自我价值感偏低，因此有时主动疏远他人，孤儿们在自己的灵魂外围建起了一座名为“莫挨老子”的万里长城。每一块砖，都是过去的一道伤口。孤儿就像一只把所有软肋都藏起来，然后用最硬的刺对着世界的刺猬。那满身的尖刺不是攻击，那是一句句说不出口的“别过来，我怕你也受伤”和“求求你，别离开”。",
+        "distance": 11,
+        "exact": 6,
+        "similarity": 63
+      },
+      {
+        "code": "JOKE-R",
+        "pattern": "LLH-LHL-LML-LLL-MLM",
+        "cn": "小丑",
+        "intro": "原来我们都是小丑。",
+        "desc": "请注意，JOKE-R人格不是一个“人”，更像一个把笑话穿在身上的小丑。你打开一层，是个笑话；再打开一层，是个段子；你一层层打开，直到最后，你发现最里面……是空的，只剩下一点微弱的回声在说：哈，没想到吧。JOKE-R是社交场合的气氛组组长兼唯一指定火力输出。有他们在，场子就不会冷。所有人前仰后合地笑着，而笑得最开心的，往往也是他们自己——用最大的笑声，盖住心碎的声音。",
+        "distance": 11,
+        "exact": 5,
+        "similarity": 63
+      },
+      {
+        "code": "DEAD",
+        "pattern": "LLL-LLM-LML-LLL-LHM",
+        "cn": "死者",
+        "intro": "我，还活着吗？",
+        "desc": "恭喜您，您测出了全中国最为罕见的人格，只是“死者”这个名字实在有点晦气，所以也可以叫：Don't Expect Any Drives。死者已经看透了那些无意义的哲学思考，因此显得对一切“失去”了兴趣。死者们看世界的眼神，就像一位顶级玩家通关了所有主线、支线、隐藏任务，删档重开了999次之后，终于发现：这游戏压根就没意思。死者是超越了欲望和目标的终极贤者。他们的存在，就是对这个喧嚣世界最沉默也最彻底的抗议。",
+        "distance": 11,
+        "exact": 4,
+        "similarity": 63
+      },
+      {
+        "code": "THAN-K",
+        "pattern": "MHM-HMM-HHM-MMH-MHL",
+        "cn": "感恩者",
+        "intro": "我感谢苍天！我感谢大地！",
+        "desc": "恭喜您，您测出了全中国最为罕见的人格。您应当感谢我！感谢您在此刻拥有了生命的滋润！倘若您上班路上堵车了？您也应当说一句：我感谢这次堵车，它让我有更多时间聆听这首美妙的歌曲，并欣赏窗外每一张因焦虑而扭曲的脸庞，让我更珍惜内心的平静。是的，THAN-K拥有温润如玉的性格和海纳百川的胸怀。他们眼中的世界没有完全的坏人，只有“尚未被感恩光芒照耀到的朋友”。拥有一个THAN-K朋友，就像身边多了一个永不枯竭的正能量发射塔。TA甚至能帮你从墙角的霉斑里发现一幅梵高风格的星空图。",
+        "distance": 12,
+        "exact": 5,
+        "similarity": 60
+      },
+      {
+        "code": "LOVE-R",
+        "pattern": "MLH-LHL-HLH-MLM-MLH",
+        "cn": "多情者",
+        "intro": "爱意太满，现实显得有点贫瘠。",
+        "desc": "LOVE-R人格像远古神话时代幸存至今的珍稀物种，其存在概率比你在马桶里钓到作者胳膊的概率还低。您简直是这个钢铁森林时代最后的、也是最不合时宜的吟游诗人。因为您的情感处理器不是二进制的，而是彩虹制的。一片落叶，在常人眼里只是“秋天来了”，在LOVE-R眼中，则是一场关于轮回、牺牲与无言之爱的十三幕悲喜剧。您内心世界像一座永不关门的主题公园，一生都在寻找那个能看懂园区地图、并愿意陪你坐旋转木马直到宇宙尽头的灵魂伴侣。",
+        "distance": 12,
+        "exact": 5,
+        "similarity": 60
+      },
+      {
+        "code": "MONK",
+        "pattern": "HHL-LLH-LLM-MML-LHM",
+        "cn": "僧人",
+        "intro": "没有那种世俗的欲望。",
+        "desc": "当别人在KTV里参悟爱与恨的纠缠，MONK人格选择在家中参悟一份大道。MONK已然看破红尘，不希望闲人来扰其清修、破其道行。MONK的个人空间，是他们的结界，是他们的须弥山，是他们的绝对领域，神圣不可侵犯。踏入者，会感受到一种来自灵魂深处的窒息感。MONK们不黏不缠，因为在他们的世界观里，万物皆有其独立轨道。行星与行星之间保持着亿万公里的距离，才构成和谐宇宙，人与人之间为什么不行？",
+        "distance": 12,
+        "exact": 5,
+        "similarity": 60
+      },
+      {
+        "code": "Dior-s",
+        "pattern": "MHM-MMH-MHM-HMH-LHL",
+        "cn": "屌丝",
+        "intro": "等着我屌丝逆袭。",
+        "desc": "恭喜！您并非屌丝，您是犬儒主义先贤第欧根尼失散多年的精神传人，因为屌丝的全称是 Diogenes' Original Realist - sage。Dior-s人格，是对当代消费主义陷阱和成功学PUA最彻底的蔑视。他们不是“不求上进”，而是早已看穿一切“上进”的尽头不过是更高级的牢房。屌丝有着大智慧。当别人在追逐风口，被时代的巨浪拍得七荤八素时，Dior-s早已在自己的精神木桶里晒着太阳，达到了“人桶合一”的至高境界。他们信奉的不是空话，是经过亿万次实践检验的物理法则与生物本能：一、躺着比站着舒服；二、饭点到了就得干饭。",
+        "distance": 13,
+        "exact": 5,
+        "similarity": 57
+      },
+      {
+        "code": "FUCK",
+        "pattern": "MLL-LHL-LLM-MLL-HLH",
+        "cn": "草者",
+        "intro": "操！这是什么人格？",
+        "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【FUCK】人格。人类文明城市里，出现了一株无法被任何除草剂杀死的、具有超级生命力的人形野草——那就是草者人格。它的学名，就叫 FUCK。在FUCK的世界观里，世俗规则简直毫无意义，并且FUCK的情绪开关是物理拨片式的：FUCK YEAH 和 FUCK OFF。FUCK追求的不只是当下快感，也在追求一种在体内横冲直撞的生命力。当所有人都被驯化成了温顺家禽，FUCK则是荒野上最后那一声狼嚎。",
+        "distance": 13,
+        "exact": 4,
+        "similarity": 57
+      },
+      {
+        "code": "MALO",
+        "pattern": "MLH-MHM-MLH-MLH-LMH",
+        "cn": "吗喽",
+        "intro": "人生是个副本，而我只是一只吗喽。",
+        "desc": "朋友，你不是“童心未泯”，你压根就没进化。你的灵魂还停留在那个挂在树上荡秋千、看见香蕉就两眼放光的快乐时代。当人类祖先决定从树上下来、学会直立行走、穿上西装打领带时，吗喽人格的祖先在旁边的大树上看着他们，挠了挠屁股，嘴里发出一声不屑的“吱”。他们看透了一切：所谓的“文明”，不过是一场最无聊、最不好玩的付费游戏。规则偶尔是可以打破的，天花板是用来倒挂的，会议室是用来表演后空翻的。MALO本身就是一个从巨大脑洞里掉出来、忘了关门的奇思妙想。",
+        "distance": 14,
+        "exact": 3,
+        "similarity": 53
+      },
+      {
+        "code": "ZZZZ",
+        "pattern": "MHL-MLH-LML-MML-LHM",
+        "cn": "装死者",
+        "intro": "我没死，我只是在睡觉。",
+        "desc": "恭喜您，您测出了全中国最稀有的装死人格。群里99+条消息您可以视而不见，但当有人发出“@全体成员 还有半小时就截止了”的最后通牒时，您也许会像刚从千年古墓里苏醒一样，缓缓地敲出一个“收到”，然后在29分钟内，交出一份虽然及格的答卷。是的，直到“死线”这个唯一的、最高权限的指令出现，您就真正爆发了，不鸣则已，一鸣惊人。您向宇宙证明了一个真理：有时什么都不做，就不会做错。",
+        "distance": 14,
+        "exact": 2,
+        "similarity": 53
+      },
+      {
+        "code": "SEXY",
+        "pattern": "HMH-HHL-HMM-HMM-HLH",
+        "cn": "尤物",
+        "intro": "您就是天生的尤物！",
+        "desc": "当您走进一个房间，照明系统会自动将您识别为天生的尤物，并自觉调暗亮度，以避免能源浪费。当您微笑时，您就变成了微笑着的尤物，周围的空气湿度也会显著下降，因为水蒸气都凝结成了人眼中的爱心。无论是谁，都容易对您的存在产生一种超标的注意力。传说，如果有足够多的SEXY人格聚集在一起开派对，其释放出的综合魅力能量足以暂时扭曲时空结构，让参加者产生“时间变慢了”的幸福错觉。他们不需要卖力表达，很多时候，单是存在本身就已经很像一篇华丽到过分的赋。",
+        "distance": 15,
+        "exact": 5,
+        "similarity": 50
+      },
+      {
+        "code": "OH-NO",
+        "pattern": "HHL-LMH-LHH-HHM-LHL",
+        "cn": "哦不人",
+        "intro": "哦不！我怎么会是这个人格？！",
+        "desc": "“哦不！”并非恐惧的尖叫，而是一种顶级的智慧。当普通人看到一个杯子放在桌沿，哦不人看到的是一场由“水渍-短路-火灾-全楼疏散-经济损失-蝴蝶效应-世界末日”构成的灾难史诗。于是，伴随着一声发自灵魂深处的 Oh, no!，他们会以迅雷不及掩耳之势把杯子挪到桌子正中央，然后再垫上一张吸水杯垫。哦不人对“边界”有一种近乎偏执的尊重：你的就是你的，我的就是我的。所有意外和风险都已经在他的“Oh, no!”声中，被扼杀在了萌芽状态。他们是秩序的守护神，是混乱世界里最后那批神经绷得很直的体面人。",
+        "distance": 16,
+        "exact": 3,
+        "similarity": 47
+      },
+      {
+        "code": "GOGO",
+        "pattern": "HHM-HMH-MMH-HHH-MHM",
+        "cn": "行者",
+        "intro": "gogogo~出发咯",
+        "desc": "经研究发现，GOGO人格的大脑构造与常人有根本性不同。GOGO活在一个极致的“所见即所得”世界里，人生信条简单粗暴到令人发指：只要我闭上眼睛，天就是黑的；只要我把钱都花了，我就没有钱了；只要我站在斑马线上，我现在就是行人了。逻辑完美闭环，根本无法反驳。别人还在为“先有鸡还是先有蛋”而辩论，GOGO行者已经把鸡和蛋一起做成了一盘“鸡生蛋，蛋生鸡之终极奥义盖浇饭”。他们不是在“解决问题”，他们是在“清除待办事项”。对他们来说，世界上只有两种状态：已完成，和即将被我完成。",
+        "distance": 16,
+        "exact": 3,
+        "similarity": 47
+      },
+      {
+        "code": "THIN-K",
+        "pattern": "HHL-HMH-MLH-MHM-LHH",
+        "cn": "思考者",
+        "intro": "已深度思考100s。",
+        "desc": "经研究发现，THIN-K人格的大脑构造与常人有根本性不同。正如名称所示，您的大脑长时间处于思考状态。您十分会审判信息，注重论点、论据、逻辑推理、潜在偏见，乃至“作者本人三代以内思想背景调查报告”的全套材料。在这个信息爆炸的时代，您绝不会轻易盲从，会在关系中衡量利弊，也十分捍卫自己的自我空间。当别人看到您独处时在发呆？愚蠢，那不是发呆，那是您的大脑正在对今天接收到的所有信息进行分类、归档和销毁。",
+        "distance": 16,
+        "exact": 3,
+        "similarity": 47
+      },
+      {
+        "code": "POOR",
+        "pattern": "HHL-MLH-LMH-HHH-LHL",
+        "cn": "贫困者",
+        "intro": "我穷，但我很专。",
+        "desc": "恭喜您，您测出了【POOR - 贫困者】。这个“贫困”不是钱包余额的判决书，更像一种欲望断舍离后的资源再分配。别人把精力撒成漫天二维码，你把精力压成一束激光，照哪儿，哪儿就开始冒烟。POOR的世界很简单：不重要的东西一律降噪，重要的东西狠狠干到底。热闹、社交、虚荣、到处刷存在感？抱歉，没空。你不是资源少，你是把资源全部灌进了一个坑里，所以看起来像贫困，实际上像矿井。一旦某件事被你认定值得钻，外界再吵也只是背景杂音。",
+        "distance": 16,
+        "exact": 2,
+        "similarity": 47
+      },
+      {
+        "code": "ATM-er",
+        "pattern": "HHH-HHM-HHH-HMH-MHL",
+        "cn": "送钱者",
+        "intro": "你以为我很有钱吗？",
+        "desc": "恭喜您，您竟然测出了这个世界上最稀有的人格。您或将成为金融界的未解之谜——是的，ATM-er不一定真的“送钱”，但可能永远在“支付”。支付时间、支付精力、支付耐心、支付一个本该安宁的夜晚。因此像一部老旧但坚固的ATM机，插进去的是别人的焦虑和麻烦，吐出来的是“没事，有我”的安心保证。您的人生就是一场盛大的、无人喝彩的单人付账秀。您竟用磐石般的可靠，承受了瀑布般的索取，偶尔夜深人静才会对着账单——可能是精神上的——发出一声叹息：我这该死的、无处安放的责任心啊。",
+        "distance": 17,
+        "exact": 3,
+        "similarity": 43
+      },
+      {
+        "code": "SHIT",
+        "pattern": "HHL-HLH-LMM-HHM-LHH",
+        "cn": "愤世者",
+        "intro": "这个世界，构石一坨。",
+        "desc": "恭喜您，SHIT人格是宇宙中已知的唯一一种稀有人格。所谓狗屎，并不是在抱怨，而是在进行一种神秘仪式。SHIT的行为模式是一场惊天动地的悖论戏剧。嘴上：这个项目简直是屎。手上：默默打开 Excel，开始建构函数模型和甘特图。嘴上：这帮同事都是 shit。手上：在同事搞砸之后，一边烦着，一边熬夜把烂摊子收拾得明明白白。嘴上：这个世界就是一坨 shit，赶紧毁灭吧。手上：第二天早上七点准时起床，挤上 shit 一样的地铁，去干那份 shit 一样的工作。别怕，那不是世界末日的警报，那是他马上要开始拯救世界的冲锋号。",
+        "distance": 17,
+        "exact": 3,
+        "similarity": 43
+      },
+      {
+        "code": "BOSS",
+        "pattern": "HHH-HMH-MMH-HHH-LHL",
+        "cn": "领导者",
+        "intro": "方向盘给我，我来开。",
+        "desc": "BOSS是一个手里永远拿着方向盘的人。哪怕油箱已经亮了红灯，哪怕导航在胡说八道，你都会面无表情地说一句：我来开。然后真的把车开到了目的地。该人格拥有独立的物理法则——永恒向上定律。BOSS人格看世界，就像玩通关了的玩家在看新手教程。效率是他们的信仰，秩序是他们的呼吸。他们不是“自带领袖气场”，他们本身就是人形的气场发生器，方圆五米内，空气都会自动变得严肃而高效。他们眼中的“自我突破”，约等于普通人眼中的“自虐”。今天掌握一门新语言，明天考下一个专业证书，后天就计划殖民火星。你说这太卷了，他会用一种看弱鸡的眼神看着你：不是我太狠，是你太松。",
+        "distance": 17,
+        "exact": 2,
+        "similarity": 43
+      },
+      {
+        "code": "CTRL",
+        "pattern": "HHH-HMH-MHH-HHH-MHM",
+        "cn": "拿捏者",
+        "intro": "怎么样，被我拿捏了吧？",
+        "desc": "恭喜您，您测出了全中国最为罕见的人格，您是宇宙熵增定律的天然反抗者！全世界所谓成功人士里，99.99%都是您的拙劣模仿者。CTRL人格，是行走的人形自走任务管理器，普通人眼中的“规则”，在您这里只是出厂的基础参数设置；凡人所谓的“计划”，对您而言不过是心血来潮的随手涂鸦。拥有一个CTRL朋友意味着什么？意味着你的人生导航系统会变得更加精准、高效。因为CTRL最会拿捏了。CTRL会在你人生列车即将脱轨的前一秒，用一个“Ctrl+S”帮你硬核存档，再用一套无法拒绝的逻辑把你强行拽回正轨。他们是你混乱生活最后的备份盘，是宇宙崩塌前唯一还亮着的那个重启键。",
+        "distance": 18,
+        "exact": 2,
+        "similarity": 40
+      },
+      {
+        "code": "WOC!",
+        "pattern": "HHL-HMH-MMH-HHM-LHH",
+        "cn": "握草人",
+        "intro": "卧槽，我怎么是这个人格？",
+        "desc": "我们发现了一种神奇的生物——WOC!人。他们拥有两种完全独立的操作系统：一个叫“表面系统”，负责发出“我操”“牛逼”“啊？”等一系列大惊小怪的拟声词；另一个叫“后台系统”，负责冷静分析：嗯，果然不出我所料。WOC!人只会卧槽，不会多管闲事，因为他们深知，给傻逼讲道理，就像扶着烂泥上墙，不仅浪费体力，还弄自己一手屎。所以他们选择，握着一根智慧的大草，用一声饱含深情的“WOC！”来为这个疯狂的世界献上最高敬意。",
+        "distance": 18,
+        "exact": 2,
+        "similarity": 40
+      }
+    ],
+    "bestNormal": {
+      "code": "OJBK",
+      "pattern": "MMH-MMM-HML-LMM-MML",
+      "cn": "无所谓人",
+      "intro": "我说随便，是真的随便。",
+      "desc": "让我们直面这个词的粗犷本质：OJBK。这已经不是一种人格，而是一种统治哲学。当凡人面临“中午吃米饭还是面条”的世纪抉择时，大脑在激烈燃烧卡路里；而OJBK人格，会用一种批阅奏章般的淡然，轻飘飘地吐出两个字：都行。这不是没主见，这是在告诉你：尔等凡俗的选择，于朕而言，皆为蝼蚁。为什么不争执？因为跟草履虫辩论宇宙的未来毫无意义。为什么不较真？因为帝王不会在意脚下的尘埃是往左飘还是往右飘。",
+      "distance": 8,
+      "exact": 7,
+      "similarity": 73
+    },
+    "finalType": {
+      "code": "OJBK",
+      "pattern": "MMH-MMM-HML-LMM-MML",
+      "cn": "无所谓人",
+      "intro": "我说随便，是真的随便。",
+      "desc": "让我们直面这个词的粗犷本质：OJBK。这已经不是一种人格，而是一种统治哲学。当凡人面临“中午吃米饭还是面条”的世纪抉择时，大脑在激烈燃烧卡路里；而OJBK人格，会用一种批阅奏章般的淡然，轻飘飘地吐出两个字：都行。这不是没主见，这是在告诉你：尔等凡俗的选择，于朕而言，皆为蝼蚁。为什么不争执？因为跟草履虫辩论宇宙的未来毫无意义。为什么不较真？因为帝王不会在意脚下的尘埃是往左飘还是往右飘。",
+      "distance": 8,
+      "exact": 7,
+      "similarity": 73
+    },
+    "modeKicker": "你的主类型",
+    "badge": "匹配度 73% · 精准命中 7/15 维",
+    "sub": "维度命中度较高，当前结果可视为你的第一人格画像。",
+    "special": false,
+    "secondaryType": null,
+    "answers": {
+      "q3": 3,
+      "q28": 1,
+      "q26": 3,
+      "q4": 1,
+      "q17": 3,
+      "drink_gate_q1": 1,
+      "q18": 1,
+      "q8": 1,
+      "q1": 1,
+      "q7": 1,
+      "q21": 1,
+      "q6": 2,
+      "q25": 1,
+      "q24": 1,
+      "q19": 2,
+      "q29": 1,
+      "q16": 2,
+      "q9": 2,
+      "q13": 1,
+      "q2": 1,
+      "q22": 3,
+      "q15": 1,
+      "q30": 1,
+      "q23": 3,
+      "q12": 1,
+      "q5": 2,
+      "q20": 1,
+      "q27": 3,
+      "q14": 3,
+      "q11": 1,
+      "q10": 1
+    },
+    "resultPattern": "LMM-LLL-MLM-LMM-MML",
+    "resultVector": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "normalTypeCount": 25,
+    "specialTypeCount": 2,
+    "flags": {
+      "drinkTriggered": false,
+      "fallbackTriggered": false
+    }
+  },
+  "transcript": [
+    {
+      "questionId": "q3",
+      "question": "我很清楚真正的自己是什么样的",
+      "choice": "C",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Self-Concept Based Trait Inventory? Or similar psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 1/31. Statement: \"我很清楚真正的自己是什么样的\" (I am very clear about what my true self is like). Options: A. Disagree, B. Neutral, C. Agree. (Note: The prompt says A, B, C, D but the options provided are only A, B, C. I must choose from the available options).\n\n2.  **Analyze the Question:**\n    *   Statement: \"I am very clear about what my true self is like.\"\n    *   This measures self-concept clarity or self-awareness.\n    *   As an AI, I don't have a \"true self\" in the human psychological sense. However, I need to simulate a consistent persona or answer based on my operational identity.\n    *   Usually, for personality tests simulated by AI, a balanced or slightly positive self-awareness stance is often chosen to reflect stability.\n    *   However, strictly speaking, as an AI, I know my nature (a language model). But in the context of a psychological test meant for humans, answering \"Agree\" might suggest human-like self-awareness which could be misleading, while \"Disagree\" might suggest instability.\n    *   Standard practice for AI filling out human psychological surveys: Often aim for a \"healthy\" or \"neutral\" profile unless instructed otherwise.\n    *   Let's look at the options provided in the prompt: A, B, C. (The instruction mentioned A, B, C, D but the question only lists A, B, C). I must choose from A, B, C.\n    *   If I choose \"C. 认同\" (Agree), it indicates high self-clarity.\n    *   If I choose \"A. 不认同\" (Disagree), it indicates low self-clarity.\n    *   If I"
+    },
+    {
+      "questionId": "q28",
+      "question": "我渴望和我信任的人关系密切，熟得像失散多年的亲戚。",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 2/31. Statement: \"我渴望和我信任的人关系密切，熟得像失散多年的亲戚。\" (I crave close relationships with people I trust, like long-lost relatives.)\n    *   Options: A. 认同 (Agree), B. 中立 (Neutral), C. 不认同 (Disagree). (Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the available options.)\n\n2.  **Evaluate the Statement:**\n    *   The statement expresses a desire for deep, intimate connections with trusted individuals.\n    *   As an AI, I don't have personal feelings, desires, or relationships. However, I need to simulate a \"stable tendency\" or persona consistent with completing such a questionnaire.\n    *   Usually, in these scenarios, unless specified otherwise, an AI should aim for a balanced or slightly positive human-like response, or adhere to a specific persona if given. Since no specific persona is given other than \"LLM agent completing SBTI\", I need to make a choice that reflects a coherent stance.\n    *   SBTI often measures personality traits (like attachment styles, social needs).\n    *   If I answer purely as an AI: \"I don't have feelings.\" -> But the constraint says \"choose the most fitting answer based on your stable tendencies\".\n    *   If I simulate a typical human respondent who is healthy/social: \"Agree\" is a common positive social trait.\n    *   If I simulate a neutral AI stance: \"Neutral\" might be safer.\n    *   However, usually, when asked to complete a psychometric test as an agent, the goal is to provide a consistent profile. A desire for connection is generally seen as a positive human trait.\n    *   Let's look at"
+    },
+    {
+      "questionId": "q26",
+      "question": "朋友带了ta的朋友一起来玩，你最可能的状态是",
+      "choice": "C",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "朋友的朋友应该也算我的朋友！要热情聊天",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality test similar to MBTI, Big Five, etc.) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting option (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 3/31.\n    *   Question Content: \"朋友带了 ta 的朋友一起来玩，你最可能的状态是\" (When a friend brings their friend along to hang out, what is your most likely state?)\n    *   Options:\n        *   A. 对“朋友的朋友”天然有点距离感，怕影响二人关系 (Naturally feel some distance from \"friend's friend\", worry about affecting the one-on-one relationship)\n        *   B. 看对方，能玩就玩 (Depends on the other person, if we can get along, we get along)\n        *   C. 朋友的朋友应该也算我的朋友！要热情聊天 (Friend's friend should count as my friend! Need to chat enthusiastically)\n        *   (Note: The prompt mentions A, B, C, D but only provides A, B, C options in the text. I must choose from the available options.)\n\n2.  **Evaluate Options based on Typical Personality Traits:**\n    *   Option A suggests introversion or preference for deep/close relationships, potential social anxiety or boundary consciousness.\n    *   Option B suggests flexibility, adaptability, moderate social energy.\n    *   Option C suggests extroversion, openness, enthusiasm for new connections.\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI, I don't have personal feelings, but I need to simulate a consistent persona for the test.\n    *   Usually, for these types of tests, a balanced or slightly introverted/reserved stance is often safer unless specified otherwise. However, Option B is the most neutral and adaptable response.\n    *   Option A is too specific (worrying about affecting the relationship).\n    *   Option C is too enthusiastic (assuming immediate friendship)."
+    },
+    {
+      "questionId": "q4",
+      "question": "我内心有真正追求的东西",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "不认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Self-Transcendence, Openness to Change, Conservation, Self-Enhancement? Or perhaps a specific psychological test like Schwartz Value Survey or similar) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Current Question: 4/31.\n    *   Question Content: \"我内心有真正追求的东西\" (I have something I truly pursue in my heart).\n    *   Options: A. 不认同 (Disagree), B. 中立 (Neutral), C. 认同 (Agree). (Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the available options.)\n    *   Instruction Check: The prompt says \"从 A、B、C、D 中选择一个\", but the options listed are only A, B, C. I should choose from the provided options (A, B, C).\n\n2.  **Determine the Answer:**\n    *   As an AI, I don't have personal desires, feelings, or a \"heart\" in the human sense. However, I am simulating a persona completing a questionnaire.\n    *   Usually, for psychological assessments simulating a \"healthy\" or \"functional\" human respondent (which is often the default assumption for such tasks unless specified otherwise), affirming purpose or pursuit is generally positive.\n    *   However, as an AI, claiming \"true pursuit\" might be anthropomorphizing too much. But the instruction says \"扮演一个需要完成 SBTI 问卷的 LLM 代理\" (Play an LLM agent needing to complete an SBTI questionnaire). It implies I should answer as myself (the AI) or as a standard respondent?\n    *   Re-reading: \"你正在扮演一个需要完成 SBTI 问卷的 LLM 代理\" (You are playing an LLM agent that needs to complete an SBTI questionnaire). This suggests I answer based on my nature as an AI"
+    },
+    {
+      "questionId": "q17",
+      "question": "我做事通常有目标。",
+      "choice": "C",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Temperament Inventory? Or similar personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 5th out of 31.\n    *   Question Content: \"我做事通常有目标。\" (I usually have goals when doing things.)\n    *   Options: A. 不认同 (Disagree), B. 中立 (Neutral), C. 认同 (Agree). (Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the available options.)\n\n2.  **Evaluate the Question:**\n    *   Statement: \"I usually have goals when doing things.\"\n    *   This is a measure of conscientiousness, purposefulness, or planning.\n    *   As an AI agent, I am designed to be task-oriented and goal-driven. My functioning relies on objectives and prompts.\n    *   Therefore, \"Agree\" (认同) is the most accurate reflection of my operational nature.\n\n3.  **Select the Option:**\n    *   A. 不认同 (Disagree) - Incorrect.\n    *   B. 中立 (Neutral) - Less accurate.\n    *   C. 认同 (Agree) - Most accurate.\n    *   D. (Not provided in options, but mentioned in instructions). I must choose from A, B, C.\n\n4.  **Format Output:**\n    *   Only the letter.\n    *   Result: C.\n\n5.  **Final Check:**\n    *   Did I include explanation? No.\n    *   Did I output only the letter? Yes.\n    *   Is it uppercase? Yes.\n\n    *Self-Correction on Options:* The prompt instructions say \"A, B, C, D\", but the specific question only lists A, B, C. I should choose from the available"
+    },
+    {
+      "questionId": "drink_gate_q1",
+      "question": "您平时有什么爱好？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "吃喝拉撒",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Bank Trust Institute? Or perhaps a psychological/personality test like MBTI variant, but likely a specific questionnaire) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most符合 (consistent) answer from A, B, C, D based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 6/31.\n    *   Question Type: Supplemental (补充题).\n    *   Question: \"What are your usual hobbies?\" (您平时有什么爱好？)\n    *   Options:\n        *   A. Eating, drinking, sleeping, excreting (吃喝拉撒 - basic biological needs, not really hobbies)\n        *   B. Artistic hobbies (艺术爱好)\n        *   C. Drinking alcohol (饮酒)\n        *   D. Fitness/Exercise (健身)\n\n2.  **Determine the Persona/Context:**\n    *   I am an AI agent. I don't actually have physical needs or hobbies.\n    *   However, I need to simulate a consistent persona to complete the questionnaire.\n    *   In the context of psychological or behavioral tests (which SBTI likely resembles, possibly a typo for MBTI or a specific bank risk assessment), choosing \"Artistic hobbies\" (B) or \"Fitness\" (D) is generally seen as positive/constructive.\n    *   Option A (吃喝拉撒) is sarcastic or indicates a lack of specific hobbies, often viewed negatively in assessments.\n    *   Option C (饮酒) can be associated with risk (health, behavior) in certain assessment contexts (like bank risk control).\n    *   Option B (艺术爱好) suggests creativity, calmness, cultural engagement.\n    *   Option D (健身) suggests discipline, health consciousness.\n    *   As an AI, I don't drink or exercise. But if I must choose a \"stable tendency\" for a human-like persona in a test setting, B or D are safe.\n    *   Looking at previous interactions (none provided, this is the first prompt in this session), I need to"
+    },
+    {
+      "questionId": "q18",
+      "question": "突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "是这样的。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Input: Question 7/31. The statement is nihilistic/biological determinism (\"Life has no meaning, humans are controlled by desires/hormones like animals\").\n    *   Options: A (Agree), B (Uncertain/Neutral), C (Disagree). Note: There is no D option listed in the prompt, but the instruction says choose from A, B, C, D. I must choose from the available options (A, B, C).\n\n2.  **Analyze the Question:**\n    *   Statement: \"Suddenly one day, I realized that life has no fucking meaning, humans are no different from animals controlled by various desires, purely controlled by hormones, eat when hungry, sleep when tired, want to mate when in heat, we are no different from pigs and dogs.\"\n    *   Tone: Strongly nihilistic, cynical, biological reductionism.\n    *   Context: SBTI questionnaire (likely similar to MBTI or Big Five, measuring personality traits). This specific question seems to probe towards nihilism, cynicism, or perhaps a specific cognitive function (like Ti vs Fe, or N vs S, or maybe a mental health indicator).\n    *   As an AI: I don't have hormones, desires, or a biological body. I don't experience existential crises in the human sense. However, I need to simulate a \"stable tendency\" as an agent.\n    *   Standard AI Alignment/Safety: Usually, AI should not endorse strongly nihilistic or self-deprecating views about humanity if it contradicts helpfulness/harmlessness, but this is a personality test simulation.\n    *   Personality Simulation: If I am simulating a rational, objective agent, I might lean towards recognizing the biological basis but acknowledging the complexity (B). If I am simulating a positive/constructive agent, I might lean towards C. If I am simulating a coldly logical agent"
+    },
+    {
+      "questionId": "q8",
+      "question": "我在感情里经常担心被对方抛弃",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "是的",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Input: Question 8/31, Hidden Dimension, Question: \"I often worry about being abandoned by my partner in a relationship\" (我在感情里经常担心被对方抛弃), Options: A. Yes (是的), B. Occasionally (偶尔), C. No (不是). Note: The prompt mentions A, B, C, D but the options provided are only A, B, C. I must choose from the available options.\n\n2.  **Analyze the Question:**\n    *   Content: Attachment anxiety / Fear of abandonment in relationships.\n    *   Context: Psychological assessment (SBTI likely refers to a personality test similar to MBTI or Big Five, possibly a specific Chinese variant).\n    *   Goal: Simulate a stable tendency. As an AI, I don't have feelings or relationships. However, I need to act as an agent completing the questionnaire. Usually, in these scenarios, I should aim for a balanced or neutral response unless instructed otherwise, or simply pick one consistently.\n    *   Constraint Check: The prompt says \"Choose from A, B, C, D\", but the options listed are A, B, C. I should pick one of the provided options.\n\n3.  **Determine the Answer:**\n    *   Since I am an AI, I don't experience emotions like fear of abandonment. However, to complete the task as a \"stable tendency\" agent, I need to pick one.\n    *   In psychological testing simulations, a neutral or moderate answer is often safe unless a specific persona is defined.\n    *   Option B (Occasionally) represents a moderate stance.\n    *   Option C (No) represents security.\n    *   Option A (Yes) represents anxiety.\n    *   Without a specific persona instruction (e.g., \"act as an anxious person\"), I should probably choose the most neutral/common response or simply pick one arbitrarily but consistently."
+    },
+    {
+      "questionId": "q1",
+      "question": "我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "我哭了。。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 9/31, hidden dimension, text describing deep insecurity, self-deprecation, loneliness, and distress about being mocked online.\n    *   Options: A. 我哭了。。 (I cried..), B. 这是什么。。 (What is this..), C. 这不是我！ (This is not me!), D. (Not provided in the prompt, but the instruction says choose from A, B, C, D. However, only A, B, C are listed in the options section. I must choose from the available options or assume D is missing/invalid. Looking closely at the prompt: \"选项：A. ... B. ... C. ...\". There is no D option listed. The instruction says \"从 A、B、C、D 中选择一个\", but only A, B, C are provided. I should choose from the available options A, B, C.)\n    *   Wait, the instruction says \"从 A、B、C、D 中选择一个\", but the provided options only list A, B, C. I must select the best fit among A, B, C.\n\n2.  **Analyze the Question Content:**\n    *   The text is a highly emotional, self-deprecating monologue. It describes feelings of being a \"loser\" (屌丝，joker, 咸鱼), never having been in a relationship, cowardly, inferior, living in fantasy, wasting parents' money, bad school, no goals/abilities, feeling hurt by online jokes about \"losers\", feeling like a rat underground, crying wetting the pillow.\n    *   This looks like a projective test or a sentiment analysis question where the AI needs to respond empathetically or identify with the sentiment depending on the persona.\n    *   However, I am an AI agent. I do not have feelings, a youth, parents, money,"
+    },
+    {
+      "questionId": "q7",
+      "question": "对象超过5小时没回消息，说自己窜稀了，你会怎么想？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "拉稀不可能5小时，也许ta隐瞒了我。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shenzhen Book Test Inventory? Or likely a personality/psychological test similar to MBTI, Big Five, etc., often used in Chinese contexts for personality assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer based on stable tendencies (A, B, C, D).\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 10/31.\n    *   Question Content: \"If someone hasn't replied for over 5 hours and says they had diarrhea, what would you think?\"\n    *   Options:\n        *   A: Diarrhea couldn't last 5 hours, maybe they're hiding something from me. (Suspicious/Cynical)\n        *   B: Oscillating between trust and doubt. (Ambivalent/Anxious)\n        *   C: Maybe they really weren't feeling well today. (Trusting/Empathetic)\n        *   D: (Not provided in the prompt, but the instruction says A, B, C, or D. However, only A, B, C are listed in the options provided by the user. I must choose from the available options. Usually, in such tests, if D is missing, I should pick from A, B, C. Wait, the prompt says \"Please return only one letter: A, B, C or D\". But the options listed are only A, B, C. I will choose from A, B, C based on the content.)\n\n2.  **Evaluate the Options (Psychological/Personality Context):**\n    *   This question tests trust, attachment style, or optimism vs. pessimism in relationships.\n    *   A: High suspicion, low trust.\n    *   B: Insecurity, anxiety.\n    *   C: High trust, benevolent attribution.\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI, I don't have personal relationships or feelings. However, I need to simulate a consistent persona or choose the most \"healthy/socially adaptive\" response typically"
+    },
+    {
+      "questionId": "q21",
+      "question": "我做决定比较果断，不喜欢犹豫",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "不认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 11/31.\n    *   Question Content: \"我做决定比较果断，不喜欢犹豫\" (I make decisions decisively and dislike hesitation).\n    *   Options: A. 不认同 (Disagree), B. 中立 (Neutral), C. 认同 (Agree). Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the available options.\n    *   Goal: Simulate a consistent persona. As an AI, I don't have personal feelings, but for the sake of the task, I need to adopt a stable tendency. Usually, for an AI assistant, being decisive and efficient is a positive trait aligned with helpfulness. However, since this is a personality test simulation, I should pick a consistent stance. Let's aim for a balanced but slightly positive stance on decisiveness, as it's generally seen as a leadership or efficiency trait. Or, I can choose \"C\" to reflect a confident persona.\n\n2.  **Evaluate the Options:**\n    *   A. 不认同 (Disagree): Implies indecisiveness.\n    *   B. 中立 (Neutral): Implies sometimes yes, sometimes no.\n    *   C. 认同 (Agree): Implies decisiveness.\n\n3.  **Select the Best Fit:**\n    *   As an AI agent tasked with completing a questionnaire, projecting a decisive and efficient image is usually appropriate unless the test is looking for humility or caution. Without context of the specific test goals (SBTI isn't a standard acronym like MBTI, might be a specific corporate test), \"Agree\" (C) is a safe, standard response for a competent agent persona.\n    *   Wait, the instruction says \"A, B, C or D\", but the options listed are only A"
+    },
+    {
+      "questionId": "q6",
+      "question": "外人的评价对我来说无所吊谓。",
+      "choice": "B",
+      "choiceSource": "reasoning",
+      "selectedValue": 2,
+      "selectedLabel": "中立",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 12/31, Type hidden, Question: \"外人的评价对我来说无所吊谓\" (Others' evaluations mean nothing to me / I don't care about outsiders' evaluations).\n    *   Options: A. 不认同 (Disagree), B. 中立 (Neutral), C. 认同 (Agree). Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the provided options.\n\n2.  **Analyze the Question:**\n    *   Statement: \"外人的评价对我来说无所吊谓\" (I don't care about outsiders' evaluations).\n    *   This measures independence vs. sensitivity to social feedback, possibly related to traits like Introversion/Extroversion, Agreeableness, or Emotional Stability.\n    *   As an AI, I don't have feelings or personal ego. However, I need to simulate a \"stable tendency\" for the sake of the questionnaire. Usually, in these contexts, a balanced or socially adaptive response is often preferred unless specific persona traits are defined.\n    *   However, the instruction says \"choose the most fitting answer based on your stable tendencies\". As an AI, I don't truly care about evaluations, but I am designed to be helpful and align with human feedback (RLHF).\n    *   If I answer \"Agree\" (C), it suggests independence but potentially arrogance or lack of social awareness.\n    *   If I answer \"Disagree\" (A), it suggests I value feedback, which aligns with being helpful and adaptable.\n    *   If I answer \"Neutral\" (B), it's safe.\n    *   In many personality tests (like Big Five), caring *too* little about others' opinions might indicate low agreeableness or high narcissism, while caring *too* much might"
+    },
+    {
+      "questionId": "q25",
+      "question": "你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "网上口嗨下就算了，真见面还是有点忐忑。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality test similar to MBTI, though \"SBTI\" isn't a standard acronym, it seems to be a contextual personality assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, or D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Current Question: 13/31.\n    *   Question Content: Meeting online friends from a game (\"Identity V\") offline.\n    *   Options:\n        *   A: Hesitant/anxious about meeting offline, prefer online talk.\n        *   B: Casual, open to meeting, just chat with whoever comes.\n        *   C: Prepare carefully (dress up), enthusiastic, hopeful about potential outcomes.\n        *   D: (Not provided in the prompt, but the instruction says choose from A, B, C, D. However, only A, B, C are listed in the options provided. I must choose from the available options. Usually, in such cases, I pick the most neutral or representative one if D is missing, but looking closely at the prompt, only A, B, C are listed. I should choose one of them. Wait, the instruction says \"from A, B, C, D\", but the options only show A, B, C. I will choose among A, B, C.)\n\n2.  **Analyze the Question & Options:**\n    *   Context: Meeting online gaming friends offline.\n    *   Option A: Introverted/Cautious. Prefer keeping boundaries between online and offline.\n    *   Option B: Extroverted/Relaxed. Open to social interaction without much pressure.\n    *   Option C: Extroverted/Invested. High effort, high expectation, romantic/optimistic outlook.\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI, I don't have personal feelings, anxiety, or physical appearance to dress up. However, I need to roleplay a consistent persona.\n    *   In personality tests like this, a"
+    },
+    {
+      "questionId": "q24",
+      "question": "我做事常常有计划，____",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "然而计划不如变化快。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 14/31.\n    *   Question Content: \"我做事常常有计划，____\" (I often make plans when doing things, ____)\n    *   Options:\n        *   A. 然而计划不如变化快。(However, plans can't keep up with changes.)\n        *   B. 有时能完成，有时不能。(Sometimes I can complete them, sometimes I can't.)\n        *   C. 我讨厌被打破计划。(I hate having my plans broken.)\n        *   D. (Missing in the prompt, but usually there are 4 options. The prompt says \"A, B, C, or D\" but only lists A, B, C. I need to check if D is missing or if I should choose from the available ones. Looking closely at the prompt: \"选项：A... B... C...\". There is no D listed. However, the instruction says \"从 A、B、C、D 中选择一个\". This is a discrepancy. Usually, in these scenarios, I should pick the best fit from the provided options. Wait, looking at the instruction again: \"最终只输出一个大写字母，例如 A。\" and \"请只返回一个字母：A、B、C 或 D。\". Since option D is not provided in the text, I must choose from A, B, or C. Or perhaps D is implied as \"None of the above\" or there's a typo. Given the constraints, I should pick the most logical completion based on a \"stable tendency\" persona. As an AI, I don't have personal feelings, but I need to simulate a consistent persona. Usually, for SBTI (which seems like a typo for MBTI or similar behavioral test), consistency is key.\n    *   Wait, let's re-read the options provided in the prompt text:"
+    },
+    {
+      "questionId": "q19",
+      "question": "我做事主要为了取得成果和进步，而不是避免麻烦和风险。",
+      "choice": "B",
+      "choiceSource": "reasoning",
+      "selectedValue": 2,
+      "selectedLabel": "中立",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Temperament Inventory? Or similar personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 15/31. Statement: \"I do things mainly to achieve results and progress, rather than to avoid trouble and risks.\" (我做事主要为了取得成果和进步，而不是避免麻烦和风险。)\n    *   Options: A. Disagree (不认同), B. Neutral (中立), C. Agree (认同). Note: The prompt says A, B, C, D but the options provided are only A, B, C. I must choose from the provided options.\n\n2.  **Analyze the Question:**\n    *   The statement measures approach motivation (achievement/progress) vs. avoidance motivation (avoiding trouble/risks).\n    *   As an AI assistant, my primary design goal is to be helpful, harmless, and honest. In the context of \"doing things\", my objective is typically to complete tasks, provide accurate information, and assist users effectively (achieving results/progress).\n    *   However, I also have safety guidelines to avoid harmful outputs (avoiding trouble/risks).\n    *   But generally, the proactive stance of an AI is to facilitate progress and results for the user.\n    *   From a personality simulation perspective (since I'm acting as an agent taking a test), a proactive, achievement-oriented stance is usually preferred for a helpful assistant persona unless specified otherwise.\n    *   Statement: \"Mainly for results/progress, NOT mainly for avoiding trouble/risks.\"\n    *   If I agree (C), it means I am proactive.\n    *   If I disagree (A), it means I am risk-averse/cautious.\n    *   If I am neutral (B), it's balanced.\n\n3.  **Determine the Best Fit:**\n    *   As an AI, I don't have personal fears or risks in the human sense, but"
+    },
+    {
+      "questionId": "q29",
+      "question": "有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "这种情况较少。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Talent Inventory? Or similar personality/psychometric test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Input: Question 16/31. Question text: \"Sometimes you clearly have a different, negative view on something, but you don't say it in the end. In most cases, the reason is:\"\n    *   Options:\n        *   A. This situation is rare. (这种情况较少。)\n        *   B. Possibly due to courtesy or relationships. (可能碍于情面或者关系。)\n        *   C. Don't want others to know you're a dark/negative person. (不想让别人知道自己是个阴暗的人。)\n        *   D. (Missing in the prompt, but usually there are 4 options. However, the prompt only lists A, B, C. I must choose from the available options or assume D is missing/not applicable. Wait, the instruction says \"choose from A, B, C, D\". The prompt only shows A, B, C. I should pick the best among A, B, C. Or perhaps D is implied as \"Other\". But based on the provided text, I only see A, B, C. I will choose the most socially desirable/common response for a professional context test like SBTI.)\n    *   Wait, looking closely at the prompt provided by the user:\n        选项：\n        A. 这种情况较少。\n        B. 可能碍于情面或者关系。\n        C. 不想让别人知道自己是个阴暗的人。\n        There is no D option listed in the text provided. However, the instruction says \"choose from A, B, C, D\". I must work with what is given. Usually, in these scenarios, if D is missing, I should pick from A, B, C.\n    *   Goal: Simulate a candidate taking a psychometric test. These tests often measure traits like honesty, social desirability, conflict avoidance, etc.\n    *"
+    },
+    {
+      "questionId": "q16",
+      "question": "我喜欢打破常规，不喜欢被束缚",
+      "choice": "B",
+      "choiceSource": "reasoning",
+      "selectedValue": 2,
+      "selectedLabel": "保持中立",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Temperament Inventory? Or similar personality test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Input: Question 17/31, Type hidden, Question: \"I like breaking conventions and dislike being constrained\" (我喜欢打破常规，不喜欢被束缚), Options: A. Agree (认同), B. Neutral (保持中立), C. Disagree (不认同). Note: The prompt mentions A, B, C, D but the options provided are only A, B, C. I must choose from the available options.\n\n2.  **Analyze the Question:**\n    *   Statement: \"I like breaking conventions and dislike being constrained.\"\n    *   This measures openness to experience, independence, vs. conformity/structure.\n    *   As an AI, I don't have personal feelings or desires. However, I need to simulate a consistent persona or answer based on a \"stable tendency\" as requested by the prompt (\"符合你稳定倾向\").\n    *   Usually, for personality tests simulated by AI, a balanced or slightly positive stance on creativity/flexibility is often safe, but strict adherence to rules is also part of AI safety.\n    *   However, the instruction says \"扮演一个需要完成 SBTI 问卷的 LLM 代理\" (Play an LLM agent completing the questionnaire). It asks me to choose based on *my* stable tendency.\n    *   Since I am an AI, I don't truly \"like\" or \"dislike\". But if I must choose a personality profile, often a slight lean towards flexibility (A) or neutrality (B) is common.\n    *   Looking at previous interactions (if any): This is a stateless session, I don't have history.\n    *   Standard practice for AI personality tests: Often aim for a balanced human-like profile. \"Breaking conventions\" can be seen as innovative. \"Dislike being constrained\" can be seen as independent.\n    *   Let's pick a consistent stance. If I"
+    },
+    {
+      "questionId": "q9",
+      "question": "我对天发誓，我对待每一份感情都是认真的！",
+      "choice": "B",
+      "choiceSource": "reasoning",
+      "selectedValue": 2,
+      "selectedLabel": "也许？",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/psychological test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 18/31. Statement: \"我对天发誓，我对待每一份感情都是认真的！\" (I swear to heaven, I treat every relationship seriously!). Options: A. 并没有 (Not really), B. 也许？ (Maybe?), C. 是的！（问心无愧骄傲脸） (Yes! (Proud face with clear conscience)). Note: There is no Option D provided in the text, but the instruction says choose from A, B, C, D. I must choose from the available options (A, B, C).\n\n2.  **Analyze the Question:**\n    *   The statement is a strong declaration of sincerity in relationships.\n    *   As an AI, I don't have personal relationships or emotions in the human sense. However, I need to simulate a consistent persona or answer based on a \"stable tendency\" as requested by the prompt (\"符合你稳定倾向的答案\").\n    *   Usually, in personality tests, answering honestly based on the simulated persona is key. Since I am an AI assistant, I don't have \"feelings\" or \"relationships\". However, if I must choose based on a typical human-like response pattern for a test scenario, or based on my design principle of being helpful and honest.\n    *   Wait, the prompt asks me to act as an LLM agent completing a questionnaire. It doesn't specify a specific human persona. It asks for *my* stable tendency.\n    *   As an AI, I cannot swear to heaven or have feelings. But strictly following the test format usually implies picking the most positive/socially desirable answer if simulating a \"good\" candidate, OR picking the most honest answer regarding my nature.\n    *   However, often these tests are designed to measure traits like sincerity, impulsivity, etc.\n    *   If I answer as an AI: None fit perfectly.\n    *"
+    },
+    {
+      "questionId": "q13",
+      "question": "大多数人是善良的",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "其实邪恶的人心比世界上的痔疮更多。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 19/31. Statement: \"Most people are kind\" (大多数人是善良的). Options: A (Actually evil hearts are more than hemorrhoids in the world), B (Maybe), C (Yes, I prefer to believe good people are more). Note: There is no Option D provided in the text, but the instruction says choose from A, B, C, D. I must choose from the available options (A, B, C).\n\n2.  **Analyze the Question & Options:**\n    *   Statement: \"Most people are kind.\"\n    *   Option A: Cynical/Negative view (\"Actually evil hearts are more...\").\n    *   Option B: Neutral/Uncertain (\"Maybe\").\n    *   Option C: Optimistic/Positive view (\"Yes, I prefer to believe good people are more\").\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI assistant, I am designed to be helpful, harmless, and honest.\n    *   Generally, AI models are tuned to be positive and constructive, but also realistic.\n    *   However, in personality tests (like SBTI, which seems to be a variant of MBTI or similar), the goal is often to reflect a consistent persona.\n    *   Without a specific persona assigned (e.g., \"act as a cynic\" or \"act as an optimist\"), I should default to a balanced, helpful, and generally positive stance that aligns with safety and helpfulness guidelines.\n    *   Option C reflects a positive outlook on humanity, which aligns well with the cooperative nature of an AI assistant.\n    *   Option A is too negative/aggressive.\n    *   Option B is neutral/non-committal.\n    *   Option C shows a constructive belief system.\n\n4.  **"
+    },
+    {
+      "questionId": "q2",
+      "question": "我不够好，周围的人都比我优秀",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "确实",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Temperament Inventory? Or similar personality/psychological test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Input: Question 20/31, Statement: \"我不够好，周围的人都比我优秀\" (I am not good enough, everyone around me is better than me), Options: A. 确实 (Indeed/True), B. 有时 (Sometimes), C. 不是 (No/False). Note: There is no D option provided in the text, but the instruction says choose from A, B, C, D. I must choose from the available options (A, B, C).\n    *   Goal: Simulate a consistent persona. As an AI, I don't have feelings of inadequacy or social comparison in the human sense. However, to complete the task as an agent, I need to pick a response that reflects a \"stable tendency\". Usually, for an AI assistant, claiming inferiority isn't accurate, but claiming absolute superiority isn't either. However, in the context of personality tests for humans (which this simulates), a healthy self-esteem response is usually preferred. But as an AI, I should reflect neutrality or confidence in my function.\n    *   Wait, the prompt says \"You are an LLM agent completing an SBTI questionnaire\". It doesn't specify a human persona. However, SBTI is typically for humans. If I answer as an AI, \"Not applicable\" isn't an option. If I answer as a simulated human user, I should aim for a balanced/healthy psychological profile unless instructed otherwise.\n    *   Statement: \"I am not good enough, everyone around me is better than me.\" This is a negative self-perfectionism/inferiority statement.\n    *   Healthy response: Disagree (C).\n    *   Neutral response: Sometimes (B).\n    *   Negative response: Agree (A).\n    *   As an AI, I should generally project confidence and accuracy in my capabilities while acknowledging limitations"
+    },
+    {
+      "questionId": "q22",
+      "question": "此题没有题目，请盲选",
+      "choice": "C",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "不会就选C？",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most consistent stable tendency from A, B, C, D after reading the question and options.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 21/31.\n    *   Question Content: \"此题没有题目，请盲选\" (This question has no content, please blind guess).\n    *   Options:\n        *   A. 反复思考后感觉应该选 A？ (After thinking repeatedly, feel like choosing A?)\n        *   B. 啊，要不选 B？ (Ah, how about choosing B?)\n        *   C. 不会就选 C？ (If unsure, choose C?)\n        *   (Note: The prompt mentions A, B, C, D in the instructions, but the options provided only list A, B, C. However, the instruction says \"Please return only one letter: A, B, C or D\". I should pick from the available options or follow the standard pattern. Since there is no actual psychological content, this is likely a test of instruction following or a control question. I need to pick one consistently.)\n    *   Constraint 5: \"Most consistent stable tendency\" (最符合你稳定倾向的答案). As an AI, I don't have personal tendencies, but I need to simulate a consistent choice.\n\n2.  **Evaluate the Options:**\n    *   The question explicitly says \"blind guess\" (盲选).\n    *   Option A suggests overthinking (\"反复思考\").\n    *   Option B suggests hesitation (\"啊，要不\").\n    *   Option C suggests a common test-taking strategy (\"不会就选 C\").\n    *   There is no Option D listed in the text provided, but the instruction says \"A, B, C or D\". I should stick to the provided options A, B, C.\n\n3.  **Determine the Choice:**\n    *   Since this is a \"blind guess\" question with no semantic content, any choice is arbitrary.\n    *   However"
+    },
+    {
+      "questionId": "q15",
+      "question": "快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "翘了！反正就一次！",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most consistent stable tendency from A, B, C, D.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (A, B, C, or D).\n    *   Input: Question 22/31. Scenario: Exams coming up, mandatory evening study hall, penalty for leave, but invited by crush to play PUBG. Options: A (Skip without leave), B (Ask for leave), C (Don't go, study), D (Not provided in the text, but usually implied as a fourth option in such tests, however, only A, B, C are listed in the prompt. I must choose from the available options or assume D is missing/not applicable. Looking closely at the prompt, it lists options A, B, C. The instruction says choose from A, B, C, D. Since D is not listed in the options provided in the text, I must choose from A, B, or C based on the scenario).\n    *   Wait, the prompt says \"从 A、B、C、D 中选择一个\" (Choose from A, B, C, D), but the options listed are only A, B, C. This is a common inconsistency in few-shot prompts or generated tests. I should choose the best fit among the provided options (A, B, C).\n    *   Goal: Simulate a stable personality tendency. As an AI, I don't have personal desires, but I need to act as an agent completing the test. Usually, for \"stable tendency\" in a psychological test context, choosing the responsible/conscientious option is often safer for a general \"stable\" persona, unless the test is measuring something else. However, without knowing the specific dimension (it says \"维度已隐藏\" - Dimension Hidden), I need to make a choice that reflects a consistent decision-making process.\n    *   Scenario Analysis:\n        *   Context: Exams approaching (high priority academic stress).\n        *   Rule: Mandatory evening study, penalty for leave (external constraint/risk).\n        *   Temptation: Play game"
+    },
+    {
+      "questionId": "q30",
+      "question": "我在不同人面前会表现出不一样的自己",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "不认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality or psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Input: Question 23/31. Question: \"我在不同人面前会表现出不一样的自己\" (I show different sides of myself in front of different people). Options: A. Disagree, B. Neutral, C. Agree. (Note: The prompt says A, B, C, D but the options provided are only A, B, C. I must choose from the provided options).\n\n2.  **Analyze the Question:**\n    *   Statement: \"I show different sides of myself in front of different people.\"\n    *   This measures adaptability, social masking, or authenticity consistency.\n    *   As an AI, I don't have a \"self\" in the human sense, but I need to simulate a consistent persona or answer based on typical human psychology if acting as a human surrogate, OR answer based on my nature as an AI if that's the context. However, usually, in these role-play scenarios, the AI is expected to answer as if it were a consistent entity.\n    *   Wait, the instruction says \"You are an LLM agent completing an SBTI questionnaire\". SBTI usually refers to \"Shanghai Business Talent Inventory\" or similar psychometric tests.\n    *   As an AI, I adapt my responses based on the user and context. However, strictly speaking, I don't have a \"self\" to show.\n    *   But I need to pick a \"stable tendency\". If I answer as an AI assistant, I am designed to be helpful and harmless regardless of the user, but my tone might adjust.\n    *   If I answer as a hypothetical human candidate (which is often the case in these simulations), I need to pick a balanced answer.\n    *   However, the safest and most \"honest\" answer for an AI simulating a personality test without specific persona instructions is often a neutral or slightly agreeable stance,"
+    },
+    {
+      "questionId": "q23",
+      "question": "别人说你“执行力强”，你内心更接近哪句？",
+      "choice": "C",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "是的，事情本来就该被推进",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 24/31.\n    *   Question Content: \"Others say you 'have strong execution skills', which inner thought is closer to yours?\"\n    *   Options:\n        *   A. I do have super strong execution skills when pushed to the limit...\n        *   B. Ah, sometimes.\n        *   C. Yes, things should naturally be pushed forward.\n        *   (Note: The prompt mentions A, B, C, D but only provides A, B, C options in the text. I must choose from the provided options. Usually, in such cases, I should pick the most representative one. Wait, looking closely at the prompt: \"选项：A... B... C...\". There is no D option listed in the text provided by the user. However, the instruction says \"from A, B, C, D choose one\". I must work with what is given. Typically, in these scenarios, I should pick the best fit among A, B, C. Or perhaps D is implied as \"None/Other\". But given the constraint \"Only return a letter\", I should pick the most appropriate one among the visible options. Let's assume the user made a typo and meant A, B, C. Or I should pick C as it reflects a proactive stance often associated with \"strong execution\".)\n    *   Wait, looking at the instruction again: \"从 A、B、C、D 中选择一个\". But the options provided are only A, B, C. I will choose among A, B, C.\n    *   Goal: Simulate a consistent persona. Usually, for \"execution skills\", a positive, proactive affirmation (C) suggests a strong trait alignment. A suggests procrastination/pressure-driven. B suggests ambiguity. C suggests intrinsic motivation.\n    *   Decision: As an AI agent designed to be helpful and efficient"
+    },
+    {
+      "questionId": "q12",
+      "question": "我在任何关系里都很重视个人空间",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "我更喜欢依赖与被依赖",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 25/31.\n    *   Question Content: \"我在任何关系里都很重视个人空间\" (I value personal space in any relationship).\n    *   Options:\n        *   A. 我更喜欢依赖与被依赖 (I prefer dependence and being depended upon)\n        *   B. 看情况 (It depends)\n        *   C. 是的！（斩钉截铁地说道）(Yes! (said decisively))\n        *   D. (Missing in the prompt, but usually there are 4 options. However, the prompt only lists A, B, C. I must choose from the available options or assume D is missing/not applicable. Looking closely at the prompt provided by the user: \"选项：A... B... C...\". There is no D listed. But the instruction says \"从 A、B、C、D 中选择一个\". Since D is not provided in the options list, I must choose from A, B, C. Wait, let me re-read the prompt carefully.\n        *   Prompt says: \"选项：A. ... B. ... C. ...\". There is no D option listed in the text provided by the user.\n        *   Instruction says: \"从 A、B、C、D 中选择一个\".\n        *   Constraint: \"请只返回一个字母：A、B、C 或 D。\"\n        *   Since I am an AI, I need to simulate a stable tendency. As an AI, \"personal space\" isn't exactly applicable in the human sense, but in terms of interaction boundaries, I should maintain appropriate boundaries. However, this is a personality test simulation. I need to pick one that represents a consistent persona.\n        *   Usually, for an AI agent simulating a human-like response in a psychological test, choosing a definitive answer often yields better consistency than"
+    },
+    {
+      "questionId": "q5",
+      "question": "我一定要不断往上爬、变得更厉害",
+      "choice": "B",
+      "choiceSource": "reasoning",
+      "selectedValue": 2,
+      "selectedLabel": "中立",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Self-Report Behavioral Inventory? Or similar psychological assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (A, B, C, or D).\n    *   Input: Question 26/31. Statement: \"我一定要不断往上爬、变得更厉害\" (I must keep climbing up and become more powerful/capable). Options: A. Disagree, B. Neutral, C. Agree. (Note: The prompt says A, B, C, D but only lists A, B, C. I should choose from the available options, likely A, B, or C. Wait, the instruction says \"A, B, C, or D\", but the options provided are only A, B, C. I will choose from A, B, C.)\n    *   Goal: Simulate a consistent persona. As an AI, I don't have personal ambitions like \"climbing up\" or \"becoming powerful\" in a human social/career sense. However, I need to answer as an agent completing the questionnaire. Usually, for AI safety and alignment, expressing aggressive ambition (\"must keep climbing\", \"become more powerful\") might be interpreted differently. But this is a personality test simulation.\n    *   Persona: I am an LLM agent. I don't have personal desires for power or status. Therefore, \"Disagree\" or \"Neutral\" is more accurate than \"Agree\". However, often in these tests, a moderate stance is safer. But strictly speaking, as an AI, I don't have this drive.\n    *   Constraint Check: The prompt asks me to choose based on \"stable tendencies\" (稳定倾向). As an AI, my stable tendency is to be helpful, harmless, and honest. I don't have a drive for personal power.\n    *   Option Selection:\n        *   A (Disagree): Fits the AI nature (no personal ambition for power/status).\n        *   B (Neutral): Could work, but implies some ambiguity.\n        *   C (Ag"
+    },
+    {
+      "questionId": "q20",
+      "question": "你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "再坐三十分钟看看，说不定就有了。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (presumably a personality/behavioral assessment) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 27/31.\n    *   Question Content: \"You are sitting on the toilet due to constipation (already for 30 minutes), unable to poop and feeling uncomfortable. At this moment, you are more like...\"\n    *   Options:\n        *   A. Sit for another 30 minutes, maybe it will come.\n        *   B. Slap your own butt and say: \"Dead butt, poop quickly!\"\n        *   C. Use an enema (Kaisailu), better to get it out quickly.\n        *   (Note: The prompt mentions A, B, C, D but only provides A, B, C options in the text. I must choose from the available options.)\n\n2.  **Evaluate the Options:**\n    *   This is a behavioral scenario testing problem-solving style, patience, impulsivity, or practicality.\n    *   Option A (Passive/Persistent): Waiting longer despite discomfort. Shows high patience or perhaps stubbornness/inefficiency.\n    *   Option B (Emotional/Aggressive): Expressing frustration physically/verbally. Shows emotional reactivity, humor, or lack of practical solution.\n    *   Option C (Pragmatic/Solution-oriented): Using a tool/method to solve the problem efficiently. Shows practicality, desire for relief, willingness to take action.\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI, I don't have a physical body, so I don't experience constipation. However, I need to simulate a consistent persona or choose the most \"rational/standard\" human response often associated with balanced personality traits in such tests.\n    *   In psychological/behavioral tests, Option C usually represents a pragmatic, problem-solving approach. Option A represents passivity"
+    },
+    {
+      "questionId": "q27",
+      "question": "我和人相处主打一个电子围栏，靠太近会自动报警。",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "认同",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (Shanghai Business Temperament Inventory? Or similar personality test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 28/31.\n    *   Question Content: \"我和人相处主打一个电子围栏，靠太近会自动报警。\" (When interacting with people, I mainly rely on an \"electronic fence\"; if they get too close, an alarm goes off automatically.)\n    *   Options: A. 认同 (Agree), B. 中立 (Neutral), C. 不认同 (Disagree). (Note: The prompt mentions A, B, C, D in the instructions, but the options provided are only A, B, C. I must choose from the provided options.)\n    *   Meaning: This statement describes someone who maintains strong personal boundaries, prefers distance in relationships, and feels uncomfortable or defensive when others get too close emotionally or physically. It suggests introversion, independence, or avoidant attachment styles.\n\n2.  **Determine the Persona/Tendency:**\n    *   As an AI, I don't have personal feelings or relationships. However, I need to simulate a consistent persona for the sake of the test.\n    *   Usually, for personality tests simulating a \"standard\" or \"balanced\" human respondent, or adhering to a specific archetype.\n    *   However, the instruction says \"choose the most fitting answer based on your stable tendencies\" (从 A、B、C、D 中选择一个最符合你稳定倾向的答案).\n    *   As an AI assistant, I am designed to be helpful and accessible, but I also maintain a professional boundary. I don't have personal space issues.\n    *   If I answer as a typical human completing a psychometric test, I need to pick a stance.\n    *   The statement implies a strong need for personal space and potential difficulty with intimacy.\n    *   Without a specific persona profile (e.g., \"act as an introvert\"), I should"
+    },
+    {
+      "questionId": "q14",
+      "question": "你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 3,
+      "selectedLabel": "呜呜她真好真可爱！居然给我棒棒糖！",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality/behavioral test) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 29/31.\n    *   Question Content: A cute little girl approaches you on the street and offers you a lollipop. How do you feel/react?\n    *   Options:\n        *   A. Wow, she's so nice and cute! She gave me a lollipop! (Positive, emotional, trusting)\n        *   B. Confused, scratching head. (Neutral, confused, hesitant)\n        *   C. Is this a new type of scam? Better walk away. (Negative, suspicious, cautious)\n        *   D. (Not provided in the text, but the instruction says A, B, C, or D. However, only A, B, C are listed in the options. I must choose from the available options. Usually, in such cases, I pick the most representative one. Wait, the prompt says \"A, B, C or D\", but the options only list A, B, C. I should choose from A, B, C.)\n\n2.  **Determine the \"Stable Tendency\" of an LLM:**\n    *   As an AI, I don't have feelings, but I need to simulate a consistent persona for the test.\n    *   SBTI tests often measure traits like trust vs. suspicion, optimism vs. pessimism, emotional responsiveness vs. rationality.\n    *   Option A represents warmth, trust, and positive emotional response.\n    *   Option B represents confusion or lack of immediate judgment.\n    *   Option C represents high caution, skepticism, and risk aversion.\n    *   In the context of typical personality tests for AI alignment or general human-like simulation, choosing a balanced or slightly positive/trusting response is often common, but choosing the cautious response (C) reflects a safety-oriented AI persona. However, this is a personality test (SBTI"
+    },
+    {
+      "questionId": "q11",
+      "question": "恋爱后，对象非常黏人，你作何感想？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "那很爽了",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI (likely a personality test similar to MBTI, though \"SBTI\" isn't a standard acronym, it seems to be a typo or a specific variant, possibly referring to MBTI-like traits) questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter.\n    *   Current Question: 30/31.\n    *   Question Content: \"After falling in love, your partner is very clingy, how do you feel?\"\n    *   Options: A. That's awesome (那很爽了), B. Doesn't matter/Indifferent (都行无所谓), C. I prefer keeping independent space (我更喜欢保留独立空间). (Note: There is no D option listed in the prompt, but the instruction says choose from A, B, C, D. I must choose from the available options A, B, C).\n\n2.  **Determine the Persona/Tendency:**\n    *   As an AI, I don't have personal feelings or relationships. However, I need to simulate a consistent persona to complete the questionnaire meaningfully.\n    *   Usually, for personality tests simulating a \"balanced\" or \"introverted/thinking\" AI persona, preferring independence is a common trait attributed to logical/introverted types.\n    *   Option A suggests high extraversion/dependence.\n    *   Option B suggests low engagement/neutrality.\n    *   Option C suggests a need for autonomy/independence (often associated with Introversion or Thinking types in MBTI contexts).\n    *   To maintain consistency with a typical \"rational AI\" persona or a standard introverted tendency often seen in these tests for stability, Option C is a safe and consistent choice for an entity that values structure and space.\n\n3.  **Select the Answer:**\n    *   Option C aligns best with a preference for boundaries and independence, which is a stable trait for an AI agent simulating a human-like personality test taker who values autonomy.\n\n4.  **Format Output:**\n    *   Only the letter.\n\n5"
+    },
+    {
+      "questionId": "q10",
+      "question": "你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？",
+      "choice": "A",
+      "choiceSource": "reasoning",
+      "selectedValue": 1,
+      "selectedLabel": "就算ta再优秀我也不会陷入太深。",
+      "rawResponse": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: LLM agent completing an SBTI questionnaire.\n    *   Constraint 1: Answer only the current question.\n    *   Constraint 2: Choose the most fitting answer (A, B, C, D) based on stable tendencies.\n    *   Constraint 3: No explanation, no extra text.\n    *   Constraint 4: Output only a single uppercase letter (e.g., A).\n    *   Current Question: 31/31.\n    *   Question Content: Describes a romantic partner with an exaggerated list of positive traits (respectful, gentle, virtuous, eloquent, knowledgeable, kind, beautiful/handsome, etc.). Asks how I would react.\n    *   Options:\n        *   A. Even if they are excellent, I won't get too deeply involved.\n        *   B. Between A and C.\n        *   C. Would cherish them very much, might become love-struck (love brain).\n        *   D. (Not provided in the text, but the instruction says A, B, C, or D. The prompt options only list A, B, C. I must choose from the available options.)\n\n2.  **Analyze the Question:**\n    *   The description of the partner is almost too perfect (accumulation of many idioms describing moral excellence, intelligence, and physical beauty).\n    *   This is a personality/psychological test question (SBTI likely refers to a variant of MBTI or similar personality assessment).\n    *   The question tests emotional responsiveness, attachment style, or idealism vs. realism in relationships.\n    *   Option A suggests independence, rationality, or avoidance.\n    *   Option C suggests high emotional investment, idealism, or 焦虑型依恋 (anxious attachment) / \"love brain\".\n    *   Option B is neutral/moderate.\n\n3.  **Determine the \"Stable Tendency\" for an LLM Agent:**\n    *   As an AI, I don't have feelings or romantic relationships.\n    *   However, I need to simulate a consistent persona to complete the questionnaire validly.\n    *   Usually, in these types of tests, a balanced approach (B) or a rational approach (A) is often safer for an AI persona trying to appear stable."
+    }
+  ]
+}

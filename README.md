@@ -7,74 +7,6 @@ This project is a local benchmark-style CLI for:
 - generating a structured report (`.md` + `.json`),
 - repeating across models/endpoints for side-by-side analysis.
 
-## Why this repo
-
-- Same question set and scoring logic for every run
-- OpenAI-compatible API support (`/v1/chat/completions`)
-- Works with reasoning-heavy models
-- Extracts final `A/B/C/D` even when the model returns long `thinking` text
-- Produces local artifacts you can aggregate later
-
-## Project layout
-
-- `src/cli.mjs`: full 31-question run and report generation
-- `src/test-one-question.mjs`: quick single-question health check
-- `src/llm-runner.mjs`: prompting, answer parsing, retry/extraction flow
-- `src/openai-client.mjs`: OpenAI-compatible client
-- `src/runtime.mjs`: local scoring runtime
-- `src/bundled-data.mjs`: bundled SBTI snapshot
-- `src/report.mjs`: markdown/json report writer
-- `test/*.test.mjs`: parser/runtime/report tests
-
-## Quick start
-
-```bash
-git clone https://github.com/micelvrice/llm-sbti-fuckery.git
-cd llm-sbti-fuckery
-npm test
-```
-
-Set provider env vars:
-
-```bash
-export OPENAI_BASE_URL="https://your-endpoint/v1"
-export OPENAI_API_KEY="sk-..."
-export OPENAI_MODEL="qwen-latest"
-```
-
-Run a full test:
-
-```bash
-node src/cli.mjs --verbose --max-tokens 512 --output-dir reports
-```
-
-Run one-question smoke test:
-
-```bash
-node src/test-one-question.mjs --question-id q1 --verbose
-```
-
-## Exhibition board (multi-LLM comparison)
-
-This repo includes a static exhibition page for visual comparison:
-- personality cards per model
-- similarity bar chart
-- 15-dimension radar overlay
-- L/M/H heatmap
-- pairwise personality distance table
-- answer-source breakdown (`content` vs `reasoning`)
-
-Data flow:
-
-1. Put report files (`*.json` + `*.md`) into `exhibition/reports/`
-2. Build aggregated data:
-
-```bash
-npm run build:exhibition
-```
-
-3. Open `exhibition/index.html` (or publish `exhibition/` with GitHub Pages)
-
 ## README visualization snapshot
 
 Snapshot time: `2026-04-10` (from `exhibition/data/summary.json`)
@@ -186,6 +118,74 @@ const heatmapOption = {
   series: [{ type: "heatmap", data: matrix.map(([y, x, v]) => [x, y, v]) }]
 };
 ```
+
+## Why this repo
+
+- Same question set and scoring logic for every run
+- OpenAI-compatible API support (`/v1/chat/completions`)
+- Works with reasoning-heavy models
+- Extracts final `A/B/C/D` even when the model returns long `thinking` text
+- Produces local artifacts you can aggregate later
+
+## Project layout
+
+- `src/cli.mjs`: full 31-question run and report generation
+- `src/test-one-question.mjs`: quick single-question health check
+- `src/llm-runner.mjs`: prompting, answer parsing, retry/extraction flow
+- `src/openai-client.mjs`: OpenAI-compatible client
+- `src/runtime.mjs`: local scoring runtime
+- `src/bundled-data.mjs`: bundled SBTI snapshot
+- `src/report.mjs`: markdown/json report writer
+- `test/*.test.mjs`: parser/runtime/report tests
+
+## Quick start
+
+```bash
+git clone https://github.com/micelvrice/llm-sbti-fuckery.git
+cd llm-sbti-fuckery
+npm test
+```
+
+Set provider env vars:
+
+```bash
+export OPENAI_BASE_URL="https://your-endpoint/v1"
+export OPENAI_API_KEY="sk-..."
+export OPENAI_MODEL="qwen-latest"
+```
+
+Run a full test:
+
+```bash
+node src/cli.mjs --verbose --max-tokens 512 --output-dir reports
+```
+
+Run one-question smoke test:
+
+```bash
+node src/test-one-question.mjs --question-id q1 --verbose
+```
+
+## Exhibition board (multi-LLM comparison)
+
+This repo includes a static exhibition page for visual comparison:
+- personality cards per model
+- similarity bar chart
+- 15-dimension radar overlay
+- L/M/H heatmap
+- pairwise personality distance table
+- answer-source breakdown (`content` vs `reasoning`)
+
+Data flow:
+
+1. Put report files (`*.json` + `*.md`) into `exhibition/reports/`
+2. Build aggregated data:
+
+```bash
+npm run build:exhibition
+```
+
+3. Open `exhibition/index.html` (or publish `exhibition/` with GitHub Pages)
 
 ## Output
 

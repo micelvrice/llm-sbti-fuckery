@@ -7,11 +7,7 @@ This project is a local benchmark-style CLI for:
 - generating a structured report (`.md` + `.json`),
 - repeating across models/endpoints for side-by-side analysis.
 
-## README visualization snapshot
-
-Snapshot time: `2026-04-10` (from `exhibition/data/summary.json`)
-
-### 1) Model personality summary
+## Model personality summary
 
 | Model | Final Type | Chinese Name | Best-Normal Similarity | Result Pattern | Answer Source |
 |---|---|---|---:|---|---|
@@ -19,7 +15,7 @@ Snapshot time: `2026-04-10` (from `exhibition/data/summary.json`)
 | `minimax-latest` | `MALO` | 吗喽 | 77% | `MLH-HHH-HMH-HMH-LLH` | `content:31` |
 | `qwen-latest` | `OJBK` | 无所谓人 | 73% | `LMM-LLL-MLM-LMM-MML` | `reasoning:31` |
 
-### 2) Pairwise personality distance
+## Pairwise personality distance
 
 | Model A | Model B | Distance (15-dim) |
 |---|---|---:|
@@ -27,7 +23,7 @@ Snapshot time: `2026-04-10` (from `exhibition/data/summary.json`)
 | `qwen-medium` | `qwen-latest` | 19 |
 | `minimax-latest` | `qwen-latest` | 19 |
 
-### 3) 15-dimension level matrix (L/M/H)
+## 15-dimension level matrix (L/M/H)
 
 | Dimension | qwen-medium | minimax-latest | qwen-latest |
 |---|---|---|---|
@@ -47,7 +43,7 @@ Snapshot time: `2026-04-10` (from `exhibition/data/summary.json`)
 | So2 | M | L | M |
 | So3 | H | H | L |
 
-### 4) Type distribution (Mermaid pie)
+## Type distribution (Mermaid pie)
 
 ```mermaid
 pie showData
@@ -57,7 +53,7 @@ pie showData
   "OJBK" : 1
 ```
 
-### 5) Answer channel distribution (Mermaid pie)
+## Answer channel distribution (Mermaid pie)
 
 ```mermaid
 pie showData
@@ -66,7 +62,7 @@ pie showData
   "reasoning" : 31
 ```
 
-### 6) ECharts examples (for docs page / GitHub Pages)
+## ECharts examples (for docs page / GitHub Pages)
 
 Bar chart (similarity):
 
